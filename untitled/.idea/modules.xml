@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../appium/.idea/appium.iml" filepath="$PROJECT_DIR$/../appium/.idea/appium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../exe/.idea/exe.iml" filepath="$PROJECT_DIR$/../exe/.idea/exe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ibuy/.idea/ibuy.iml" filepath="$PROJECT_DIR$/../ibuy/.idea/ibuy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ibuy_test/.idea/ibuy_test.iml" filepath="$PROJECT_DIR$/../ibuy_test/.idea/ibuy_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/untitled.iml" filepath="$PROJECT_DIR$/.idea/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../抓取/.idea/抓取.iml" filepath="$PROJECT_DIR$/../抓取/.idea/抓取.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../爬图/.idea/爬图.iml" filepath="$PROJECT_DIR$/../爬图/.idea/爬图.iml" />
+    </modules>
+  </component>
+</project>
