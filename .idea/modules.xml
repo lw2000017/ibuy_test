@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ibuy_test.iml" filepath="$PROJECT_DIR$/.idea/ibuy_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wechat/.idea/wechat.iml" filepath="$PROJECT_DIR$/wechat/.idea/wechat.iml" />
     </modules>
   </component>
 </project>
