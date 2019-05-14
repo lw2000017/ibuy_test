@@ -2,6 +2,7 @@
 # @Time     :2019/5/13 11:19    
 # @Author   :LW                 
 # @File     :test_one.py
+# @remarks  :接口请求后需要等待一下，不然，太快的操作容易被微信误会
 
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait as wait
@@ -83,7 +84,7 @@ def get_content(query):
     response = session.get(url=url, cookies=cookies, verify=False)
     token = re.findall(r'token=(\d+)', str(response.url))[0]
     time.sleep(2)
-
+    """第一次搜索"""
     # 搜索url，输入公众号关键字进行搜索
     search_url = 'https://mp.weixin.qq.com/cgi-bin/searchbiz?'
     # 搜索微信公众号接口需要传入的参数，其中有三个变量：微信公众号token，随机数random，搜索的微信公众号名字
@@ -107,18 +108,33 @@ def get_content(query):
         params=query_id
     )
 
-    # print(search_response.content)
-    # 获取第一条数据
+    # 获取全部数据
     lists = search_response.json()
     # 查看一共获取到了多少数据
     total = lists['total']
     print(total)
-    zs = total // 5
-    ys = total % 5
+    zs = total // 5     # 整数
+    ys = total % 5      # 余数
+    begin = 0
+    if ys != 0:
+        '''余数不等于0，则需要访问的页码+1'''
+        for i in range(zs):
+            new_query_id = {
+                'action': 'search_biz',
+                'token': token,
+                'lang': 'zh_CN',
+                'f': 'json',
+                'ajax': '1',
+                'random': random.random(),
+                'query': query,
+                'begin': f'{begin + 5}',  # 变量，非第一页需要发生变化，每页+5
+                'count': '5'
+            }
+    elif ys == 0:
+        '''余数等于0，则访问页码则等于 整数'''
 
 
-
-    # 我要取全部的数据，然后，看到有多少页之类的
+    # 操作太频繁，预计需要等待一分钟左右后才可继续访问
 
     fakeid = lists.get('fakeid')
     

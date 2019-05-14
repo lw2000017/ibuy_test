@@ -49,13 +49,13 @@ def write_excel(row0, sheet, response):
         name = response[line]['title']
         price = response[line]['price']
         vipPrice = response[line]['vipPrice']
-        salesVolume = response[line]['salesVolume']
+        # originalPrice = response[line]['originalPrice']
         # volume = response[line]['volume']
         # for i in range(len(zd)):
         sheet.write(line+1, 0, name)
         sheet.write(line+1, 1, price)
         sheet.write(line+1, 2, vipPrice)
-        sheet.write(line+1, 3, salesVolume)
+        # sheet.write(line+1, 3, originalPrice)
         # sheet.write(line+1, 4, volume)
 
 
@@ -64,21 +64,21 @@ def write_excel(row0, sheet, response):
 if __name__ == '__main__':
     # 新建excel的名称
     # excel_name = input("请输入excel文件名称：")
-    excel_name = '环球捕手-夏日必备'
+    excel_name = '环球捕手-自有品牌'
     # sheet 名称
     # shname = input('请输入excel里sheet名称：')
-    shname = '清洁洗晒之清洁工具'
+    shname = '燕格格海外旗舰店'
     # excel路径，为了方便，我就放在了当前路径下
     path = f'{excel_name}.xls'
     # excel文件中，第一行的标题
-    row0 = ['商品名称', '销售价格', '会员价格',  '最近销售量']
+    row0 = ['商品名称', '销售价格', '会员价格']
     # row0_str = input('请输入你所需要的标题名称（空格隔开）：')
     # row0 = row0_str.split(' ')
     # print(row0)
     # 读取文件，并获取返回结果
     dict_json = read_json()
     # 提取想要的数据
-    response = dict_json['data']['categoryItemResultVOS']
+    response = dict_json
     # 0 新建，1追加
     is_new = 1
 
