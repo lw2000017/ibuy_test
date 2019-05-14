@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d0f8bec-170f-4a2e-a4af-fab60cf02e6d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/抓取/云集.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wechat/test_one.py" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/test_one.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/抓取/a.json" beforeDir="false" afterPath="$PROJECT_DIR$/抓取/a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/抓取/hallo.py" beforeDir="false" afterPath="$PROJECT_DIR$/抓取/hallo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬图/111.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬图/111.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/抓取/yunji.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +17,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ibuy_test$yunji.coverage" NAME="yunji Coverage Results" MODIFIED="1557806308559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抓取" />
-    <SUITE FILE_PATH="coverage/ibuy_test$hallo.coverage" NAME="hallo Coverage Results" MODIFIED="1557804447302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抓取" />
+    <SUITE FILE_PATH="coverage/ibuy_test$yunji.coverage" NAME="yunji Coverage Results" MODIFIED="1557818667558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抓取" />
+    <SUITE FILE_PATH="coverage/ibuy_test$.coverage" NAME="环球捕手 Coverage Results" MODIFIED="1557839128962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抓取" />
+    <SUITE FILE_PATH="coverage/ibuy_test$h1.coverage" NAME="h1 Coverage Results" MODIFIED="1557814913055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/ibuy_test$test.coverage" NAME="test Coverage Results" MODIFIED="1557818469392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抓取" />
+    <SUITE FILE_PATH="coverage/ibuy_test$id.coverage" NAME="id Coverage Results" MODIFIED="1557837757535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抓取" />
+    <SUITE FILE_PATH="coverage/ibuy_test$hallo.coverage" NAME="hallo Coverage Results" MODIFIED="1557837784882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抓取" />
+    <SUITE FILE_PATH="coverage/ibuy_test$11.coverage" NAME="11 Coverage Results" MODIFIED="1557821394517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抓取" />
     <SUITE FILE_PATH="coverage/ibuy_test$1.coverage" NAME="1 Coverage Results" MODIFIED="1557736984745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
     <SUITE FILE_PATH="coverage/ibuy_test$111.coverage" NAME="111 Coverage Results" MODIFIED="1557804438304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
     <SUITE FILE_PATH="coverage/ibuy_test$test_one.coverage" NAME="test_one Coverage Results" MODIFIED="1557736415894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
@@ -27,38 +33,56 @@
       <file leaf-file-name="hallo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/抓取/hallo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="57" column="47" lean-forward="true" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/抓取/a.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="205" column="21" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yunji.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/抓取/yunji.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="-1050">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding>
-                <element signature="e#132#147#0" expanded="true" />
+                <element signature="e#120#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_one.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wechat/test_one.py">
+      <file leaf-file-name="环球捕手.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/抓取/环球捕手.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="147" column="23" lean-forward="true" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
+            <state relative-caret-position="294">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#130#141#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="云集.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/抓取/云集.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-525">
+              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+              <folding>
+                <element signature="e#120#135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="id.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/抓取/id.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#127#138#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/抓取/b.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="228" column="33" lean-forward="true" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -80,7 +104,13 @@
       <find>3795</find>
       <find>3759</find>
       <find>3789</find>
+      <find>itemName</find>
+      <find>口水娃小鱼仔1kg（110包）＋赠口水娃山药薄片90g</find>
+      <find>a.json</find>
       <find>}][{</find>
+      <find>activityName</find>
+      <find>time.sl</find>
+      <find>裙子</find>
     </findStrings>
     <replaceStrings>
       <replace>C:\\Users\please call me\PycharmProjects\ibuy_test\抓取\\</replace>
@@ -103,9 +133,22 @@
         <option value="$PROJECT_DIR$/wechat/1.py" />
         <option value="$PROJECT_DIR$/wechat/test_one.py" />
         <option value="$PROJECT_DIR$/爬图/111.py" />
-        <option value="$PROJECT_DIR$/抓取/hallo.py" />
+        <option value="$PROJECT_DIR$/wechat/h1.py" />
         <option value="$PROJECT_DIR$/抓取/a.json" />
+        <option value="$PROJECT_DIR$/爬图/1.py" />
+        <option value="$PROJECT_DIR$/抓取/test.py" />
         <option value="$PROJECT_DIR$/抓取/yunji.py" />
+        <option value="$PROJECT_DIR$/抓取/11.py" />
+        <option value="$PROJECT_DIR$/抓取/休闲食品.json" />
+        <option value="$PROJECT_DIR$/抓取/牛奶饮料.json" />
+        <option value="$PROJECT_DIR$/抓取/母婴用品.json" />
+        <option value="$PROJECT_DIR$/抓取/纸品湿巾.json" />
+        <option value="$PROJECT_DIR$/抓取/手机.json" />
+        <option value="$PROJECT_DIR$/抓取/id.py" />
+        <option value="$PROJECT_DIR$/抓取/云集.py" />
+        <option value="$PROJECT_DIR$/抓取/hallo.py" />
+        <option value="$PROJECT_DIR$/抓取/环球捕手.py" />
+        <option value="$PROJECT_DIR$/抓取/b.json" />
       </list>
     </option>
   </component>
@@ -119,10 +162,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="447" />
-    <option name="y" value="38" />
-    <option name="width" value="1408" />
-    <option name="height" value="879" />
+    <option name="x" value="376" />
+    <option name="y" value="98" />
+    <option name="width" value="1651" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -140,7 +183,7 @@
             <path>
               <item name="ibuy_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="ibuy_test" type="462c0819:PsiDirectoryNode" />
-              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="抓取" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ibuy_test" type="b2602c69:ProjectViewProjectNode" />
@@ -172,27 +215,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.yunji">
-    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="wechat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wechat" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wechat/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="111" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.环球捕手">
+    <configuration name="云集" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ibuy_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -200,12 +224,50 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬图" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/抓取" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬图/111.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抓取/云集.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="11" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ibuy_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/抓取" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抓取/11.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="环球捕手" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ibuy_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/抓取" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抓取/环球捕手.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -230,26 +292,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test_one" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="wechat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wechat" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wechat/test_one.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="yunji" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="id" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ibuy_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,26 +305,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抓取/yunji.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抓取/id.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_one" />
-      <item itemvalue="Python.1" />
       <item itemvalue="Python.hallo" />
-      <item itemvalue="Python.111" />
-      <item itemvalue="Python.yunji" />
+      <item itemvalue="Python.云集" />
+      <item itemvalue="Python.11" />
+      <item itemvalue="Python.id" />
+      <item itemvalue="Python.环球捕手" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.yunji" />
+        <item itemvalue="Python.环球捕手" />
         <item itemvalue="Python.hallo" />
-        <item itemvalue="Python.111" />
-        <item itemvalue="Python.1" />
-        <item itemvalue="Python.test_one" />
+        <item itemvalue="Python.云集" />
+        <item itemvalue="Python.id" />
+        <item itemvalue="Python.11" />
       </list>
     </recent_temporary>
   </component>
@@ -316,12 +359,13 @@
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32972974" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.5463468" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32972974" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.3729553" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3293348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12686567" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32972974" />
+      <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
@@ -331,7 +375,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32972974" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,11 +419,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/抓取/hallo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
           <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+          <folding>
+            <element signature="e#120#131#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -426,13 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="347" selection-start-line="347" selection-end-line="347" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wechat/cookie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -447,46 +491,217 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/爬图/123.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/wechat/h1.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/抓取/hallo.py">
+    <entry file="file://$PROJECT_DIR$/wechat/test_one.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="57" column="47" lean-forward="true" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+        <state relative-caret-position="256">
+          <caret line="133" column="25" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/抓取/a.json">
+    <entry file="file://$PROJECT_DIR$/爬图/123.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬图/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="205" column="21" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="21" />
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/爬图/111.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="336">
+          <caret line="103" column="24" selection-start-line="103" selection-end-line="104" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/test_one.py">
+    <entry file="file://$PROJECT_DIR$/抓取/水果.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret column="40467" selection-start-column="40467" selection-end-column="40467" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="295" selection-start-line="295" selection-end-line="295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/休闲食品.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret column="31594" lean-forward="true" selection-start-column="31594" selection-end-column="31594" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/母婴用品.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66154">
+          <caret column="258510" selection-start-column="258510" selection-end-column="258510" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/纸品湿巾.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret column="1470" selection-start-column="1470" selection-end-column="1470" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/牛奶饮料.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="147" column="23" lean-forward="true" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
+          <caret column="388" lean-forward="true" selection-start-column="388" selection-end-column="388" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/抓取/yunji.py">
+    <entry file="file://$PROJECT_DIR$/抓取/美妆护肤.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/女式连衣裙.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="-357">
+          <caret column="420" selection-start-column="420" selection-end-column="420" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/女士上装.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2835" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/女鞋.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret column="82" selection-start-column="71" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/童装.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret column="364" lean-forward="true" selection-start-column="364" selection-end-column="364" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/手机.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret column="650" lean-forward="true" selection-start-column="650" selection-end-column="650" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/女士长袖T恤.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13961" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/a.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/衬衫.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1449" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/针织衫.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="73" lean-forward="true" selection-start-column="73" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/K金铂金-铂金.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#132#147#0" expanded="true" />
+            <element signature="e#127#138#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exe/hallo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2541">
+          <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/云集.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <element signature="e#120#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/hallo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="e#120#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/环球捕手.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#130#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抓取/b.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="228" column="33" lean-forward="true" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="33" />
         </state>
       </provider>
     </entry>
