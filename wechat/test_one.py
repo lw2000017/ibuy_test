@@ -107,18 +107,16 @@ def get_content(query):
         headers=headers,
         params=query_id
     )
-
-    # 获取全部数据
     lists = search_response.json()
-    # 查看一共获取到了多少数据
     total = lists['total']
     print(total)
-    zs = total // 5     # 整数
-    ys = total % 5      # 余数
-    begin = 0
-    if ys != 0:
-        '''余数不等于0，则需要访问的页码+1'''
-        for i in range(zs):
+    zs = total // 5
+    print(zs)
+    list_list = lists['list']
+    get_txt(list_list, query)
+
+    if total > 2000:    # 总数大于2000，但是只返回400页，多余的数据暂时就不要了
+        for begin in range(1, 400):
             new_query_id = {
                 'action': 'search_biz',
                 'token': token,
@@ -127,19 +125,92 @@ def get_content(query):
                 'ajax': '1',
                 'random': random.random(),
                 'query': query,
-                'begin': f'{begin + 5}',  # 变量，非第一页需要发生变化，每页+5
+                'begin': f'{begin * 5}',  # 变量，非第一页需要发生变化，每页+5  等于0，就是第一页
                 'count': '5'
             }
-    elif ys == 0:
-        '''余数等于0，则访问页码则等于 整数'''
+            # print(begin)
+            search_response = session.get(
+            search_url,
+            cookies=cookies,
+            headers=headers,
+            params=new_query_id
+            )
+            lists = search_response.json()
+            err_msg = lists['base_resp']['err_msg']
+            if err_msg == 'ok':
+                list_list = lists['list']
 
+                get_txt(list_list, query)
+                time.sleep(3)
+            elif err_msg == 'freq control':
+                print('正在等待70s')
+                time.sleep(70)
+                search_response = session.get(
+                    search_url,
+                    cookies=cookies,
+                    headers=headers,
+                    params=new_query_id
+                )
+                lists = search_response.json()
+                err_msg = lists['base_resp']['err_msg']
+                while err_msg == 'freq control':
+                    time.sleep()
+                list_list = lists['list']
+
+                get_txt(list_list, query)
+                time.sleep(5)
+            print(begin * 5)
+
+        print('dayu2000')
+    elif total <= 2000:
+        for begin in range(1, zs+1):
+            new_query_id = {
+                'action': 'search_biz',
+                'token': token,
+                'lang': 'zh_CN',
+                'f': 'json',
+                'ajax': '1',
+                'random': random.random(),
+                'query': query,
+                'begin': f'{begin * 5}',  # 变量，非第一页需要发生变化，每页+5  等于0，就是第一页
+                'count': '5'
+            }
+            # print(begin)
+            search_response = session.get(
+                search_url,
+                cookies=cookies,
+                headers=headers,
+                params=new_query_id
+            )
+            lists = search_response.json()
+            err_msg = lists['base_resp']['err_msg']
+            if err_msg == 'ok':
+                list_list = lists['list']
+
+                get_txt(list_list, query)
+                time.sleep(3)
+            elif err_msg == 'freq control':
+                print('正在等待70s')
+                time.sleep(70)
+                search_response = session.get(
+                    search_url,
+                    cookies=cookies,
+                    headers=headers,
+                    params=new_query_id
+                )
+                lists = search_response.json()
+                print(lists)
+                list_list = lists['list']
+
+                get_txt(list_list, query)
+                time.sleep(5)
+            print(begin * 5)
+        print('xiaoyu 2000')
 
     # 操作太频繁，预计需要等待一分钟左右后才可继续访问
 
-    fakeid = lists.get('fakeid')
-    
-    print(fakeid)
 
+    """
 
     # 微信公众号文章接口地址
     appmsg_url = 'https://mp.weixin.qq.com/cgi-bin/appmsg?'
@@ -186,9 +257,17 @@ def get_content(query):
         print('正在请求最后一页')
         time.sleep(5)
 
-        query_fakeid_response = re
+        """
 
 
+def get_txt(list_list, query):
+    for i in range(len(list_list)):
+        fakeid = list_list[i]['fakeid']  # fakeid 公众号id
+        nickname = list_list[i]['nickname']  # 微信名称
+        alias = list_list[i]['alias']  # 微信号
+        service_type = list_list[i]['service_type']  # 公众号类型
+        print(fakeid)
+        write_txt(fakeid, nickname, alias, service_type, query)
 
 
 
@@ -197,9 +276,19 @@ def chrome_quit():
     driver.quit()
 
 
+
+def write_txt(fakeid, nickname, alias, service_type, query):
+    with open('情感1.txt', 'a+', encoding='utf-8') as f:
+        f.write(f'{fakeid}，{nickname}，{alias}，{service_type}，{query}\n')
+        f.close()
+
+
 if __name__ == '__main__':
     now = datetime.datetime.now().replace(second=0)
+    # 获取到登录cookie
     chrome_quit()
     now_new = datetime.datetime.now().replace(second=0)
-
-    get_content(query='python')
+    # query 关键字
+    # query = ['情感', '健身', '茶', '杭州', '小姐', '种草', '美妆', '学姐', '佳人', '美丽', '姨', '打扮', '剁手', '丫头', '美容', '秘密', '洋气', '气质', '魅', '网红', '优雅', '精致', '纹身', 'tattoo', '故事', '连衣裙', '韩版', '美版']
+    query = '情感'
+    get_content(query=query)

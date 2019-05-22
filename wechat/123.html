@@ -1,0 +1,2504 @@
+
+
+
+
+
+<div class="d-main">
+    <div class="search-top">
+        <div class="query-item-list clearfix">
+            <ul class="clearfix" id="ul_searchType">
+                <li><input name="type" type="radio" value="1" class="control-checkbox" id="search-11" data-checkbox          checked
+><label for="search-11">关键词搜索</label></li>
+                <li><input name="type" type="radio" value="4" class="control-checkbox" id="search-14" data-checkbox ><label for="search-14">高级搜索</label></li>
+                <li ><input name="type" type="radio" value="5" class="control-checkbox" id="search-15" data-checkbox ><label for="search-15">文章搜索</label></li>
+                <li  class="advancing-search"><input name="type" type="radio" value="7" class="control-checkbox" id="search-17" data-checkbox ><label for="search-17">商品搜索</label><span class="badge-new">NEW</span></li>
+                <li><input name="type" type="radio" value="6" class="control-checkbox" id="search-16" data-checkbox ><label for="search-16">应用搜索</label></li>
+            </ul>
+        <div class="control-search-box">
+            <div class="control-search-1 s-control-search">
+                <input type="text" placeholder="请输入公众号名称、公众号ID、公众号发文地址" name="key" value="quyanggushi" id="searchKey">
+            </div>
+            <div class="bdsug js-search-key-Base" style="height: auto; width:600px;z-index: 888;display: none;"></div>
+            <div class="bdsug js-search-key-Advance" style="height: auto; width:600px;z-index: 888;display: none;"></div>
+            <div class="bdsug js-search-key-Article" style="height: auto; width:600px;z-index: 888;display: none;"></div>
+            <div class="bdsug js-search-key-AppDomain" style="height: auto; width:600px;z-index: 888;display: none;"></div>
+            <div class="bdsug js-search-key-Goods" style="height: auto; width:600px;z-index: 888;display: none;"></div>
+
+            <a href="javascript:void(0);" class="control-search-1-submit" onclick="AjaxForm2()">搜索</a>
+            <a href="javascript:void(0);" class="control-search-1-submit up-condition js-advanced-condition js-put-up" style="display: none">展开条件<i class="put-up"></i></a>
+            <a href="javascript:void(0);" class="control-search-1-submit down-condition js-advanced-condition js-put-down" style="display:none">收起条件 <i class="put-down"></i></a>
+            <div class="control-search-tip" style="display: none"></div>
+        </div>
+        <div class="line js-search-line" style="display: none"></div>
+            <div class="js-base-options">
+                <ul class="choose-conditions">
+                    <div class="line"></div>
+                    <li>
+                        <h5 class="space-distance">排序方式：</h5>
+                        <div class="other-conditions" id="js-id-basebizsort">
+                            <a href="javascript:void(0);" data-cond="5" class="active">匹配程度</a>
+                            <a href="javascript:void(0);" data-cond="1">活跃粉丝数</a>
+                            <a href="javascript:void(0);" data-cond="2">头条平均阅读</a>
+                            <a href="javascript:void(0);" data-cond="3">头条平均点赞</a>
+                            <a href="javascript:void(0);" data-cond="7">头条平均留言</a>
+                            <a href="javascript:void(0);" data-cond="4">周发文篇数</a>
+                            <a href="javascript:void(0);" data-cond="6">西瓜指数</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="js-advanced-options " >
+                <div class="senior-search senior-search-new js-advanced-options js-advanced-box" style=" display:none;">
+                    <div class="choose-conditions js-choose-conditions">
+                        <div class="screen-item-list">
+                            <div class="item-t five-space">关键词匹配：</div>
+                            <div class="other-conditions screen-item screen-item-p" id="js-id-matching">
+                                <a href="javascript:;" data-cond="n" data-toggle="tooltip" data-placement="top" data-original-title="通过公众号名称及简介中带有指定关键词的搜索">公众号名称<i></i></a>
+                                <a href="javascript:;" data-cond="t" data-toggle="tooltip" data-placement="top" data-original-title="通过公众号日常发文的内容主题进行搜索，例：新媒体运营、宠物、军事、化妆品">公众号发文主题<i></i></a>
+                                <a href="javascript:;" data-cond="a" data-toggle="tooltip" data-placement="top" data-original-title="">公众号主体<i></i></a>
+                            </div>
+                        </div>
+
+                        <div class="screen-item-list js-search-condtion-industry">
+                            <div class="item-t space-distance">所属行业：</div>
+                            <div class="other-conditions screen-item screen-item-p" id="js-id-industry">
+                                <a href="javascript:;" data-cond="0" class="pull-left">不限</a>
+                                <span class="tag-choose">
+                                        <a href="javascript:;" data-cond="17">资讯</a>
+                                        <a href="javascript:;" data-cond="10">财经</a>
+                                        <a href="javascript:;" data-cond="3">教育</a>
+                                        <a href="javascript:;" data-cond="6">娱乐</a>
+                                        <a href="javascript:;" data-cond="5">科技</a>
+                                        <a href="javascript:;" data-cond="9">生活</a>
+                                        <a href="javascript:;" data-cond="21">体育</a>
+                                        <a href="javascript:;" data-cond="24">游戏</a>
+                                        <a href="javascript:;" data-cond="7">文化</a>
+                                        <a href="javascript:;" data-cond="20">美食</a>
+                                        <a href="javascript:;" data-cond="2">情感</a>
+                                        <a href="javascript:;" data-cond="58">文摘</a>
+                                        <a href="javascript:;" data-cond="11">汽车</a>
+                                        <a href="javascript:;" data-cond="8">旅游</a>
+                                        <a href="javascript:;" data-cond="22">时尚</a>
+                                        <a href="javascript:;" data-cond="16">美妆护肤</a>
+                                        <a href="javascript:;" data-cond="14">房产</a>
+                                        <a href="javascript:;" data-cond="4">健康</a>
+                                        <a href="javascript:;" data-cond="26">军事</a>
+                                        <a href="javascript:;" data-cond="27">数码</a>
+                                        <a href="javascript:;" data-cond="1">搞笑趣闻</a>
+                                        <a href="javascript:;" data-cond="12">职场管理</a>
+                                        <a href="javascript:;" data-cond="19">招聘</a>
+                                        <a href="javascript:;" data-cond="15">政务</a>
+                                        <a href="javascript:;" data-cond="29">萌宠</a>
+                                        <a href="javascript:;" data-cond="13">三农</a>
+                                        <a href="javascript:;" data-cond="25">星座运势</a>
+                                        <a href="javascript:;" data-cond="30">摄影</a>
+                                        <a href="javascript:;" data-cond="23">宗教</a>
+                                        <a href="javascript:;" data-cond="28">收藏</a>
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="screen-item-list">
+                            <div class="item-t space-distance">筛选条件：</div>
+                            <div class="screen-item screen-item-m">
+                                <dl>
+                                    <dt>预估活跃粉丝数</dt>
+                                    <dd><select name="js-id-fans" id="js-id-fans" data-select="" style="width:148px;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                            <option value="0">不限</option>
+                                            <option value="5">5万以下</option>
+                                            <option value="5-10">5万-10万</option>
+                                            <option value="10-20">10万-20万</option>
+                                            <option value="20-50">20万-50万</option>
+                                            <option value="50-100">50万-100万</option>
+                                            <option value="100">100万以上</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>头条广告报价</dt>
+                                    <dd>
+                                        <select name="js-id-price" id="js-id-price" data-select="" style="width:148px;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                            <option value="0">不限</option>
+                                            <option value="1">1000以下</option>
+                                            <option value="1-5">1000-5000</option>
+                                            <option value="5">5000以上</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>头条平均阅读</dt>
+                                    <dd>
+                                        <select name="js-id-read" id="js-id-read" data-select="" style="width:148px;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                            <option value="0">不限</option>
+                                            <option value="0.2">2000以下</option>
+                                            <option value="0.2-0.5">2000-5000</option>
+                                            <option value="0.5-1">5000-1万</option>
+                                            <option value="1-5">1万-5万</option>
+                                            <option value="5-10">5万-10万</option>
+                                            <option value="10">10万以上</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>最近发文时间</dt>
+                                    <dd>
+                                        <select name="js-id-lastpubday" data-select="" style="width:148px;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                            <option value="0">不限</option>
+                                            <option value="90">90天内</option>
+                                            <option value="30">30天内</option>
+                                            <option value="7">7天内</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>西瓜指数</dt>
+                                    <dd>
+                                        <select name="js-id-guazhishu" id="js-id-guazhishu" data-select="" style="width:148px;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                            <option value="0">不限</option>
+                                            <option value="0.4">400以下</option>
+                                            <option value="0.4-0.6">400-600</option>
+                                            <option value="0.6-0.8">600-800</option>
+                                            <option value="0.8-1">800-1000</option>
+                                            <option value="1">1000以上</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>运营主体</dt>
+                                    <dd>
+                                        <select name="js-id-CustomerType" data-select style="width:148px;">
+                                            <option value="-1">不限</option>
+                                            <option value="0">个人</option>
+                                            <option value="1">企业</option>
+                                            <option value="2">传媒</option>
+                                            <option value="3">政府单位</option>
+                                            <option value="4">事业单位</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>男女比例</dt>
+                                    <dd>
+                                        <select name="js-id-Ratio" data-select style="width:148px;">
+                                            <option value="0">不限</option>
+                                            <option value="male">男粉多</option>
+                                            <option value="female">女粉多</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>注册时间</dt>
+                                    <dd>
+                                        <select name="js-id-Register" data-select style="width:148px;">
+                                            <option value="0">不限</option>
+                                            <option value="h">半年内</option>
+                                            <option value="1">1年内</option>
+                                            <option value="2">2年内</option>
+                                            <option value="3">3年内</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>所属省份</dt>
+                                    <dd>
+                                        <select data-select style="width: 148px;" name="position" id="js-id-position">
+                                            <option value="0">省份</option>
+                                            <option value="北京市">北京市</option>
+                                            <option value="天津市">天津市</option>
+                                            <option value="上海市">上海市</option>
+                                            <option value="重庆市">重庆市</option>
+                                            <option value="黑龙江">黑龙江省</option>
+                                            <option value="辽宁">辽宁省</option>
+                                            <option value="吉林">吉林省</option>
+                                            <option value="河北">河北省</option>
+                                            <option value="河南">河南省</option>
+                                            <option value="湖北">湖北省</option>
+                                            <option value="湖南">湖南省</option>
+                                            <option value="山东">山东省</option>
+                                            <option value="山西">山西省</option>
+                                            <option value="内蒙古">内蒙古省</option>
+                                            <option value="陕西">陕西省</option>
+                                            <option value="安徽">安徽省</option>
+                                            <option value="浙江">浙江省</option>
+                                            <option value="江苏">江苏省</option>
+                                            <option value="福建">福建省</option>
+                                            <option value="广东">广东省</option>
+                                            <option value="广西">广西省</option>
+                                            <option value="海南">海南省</option>
+                                            <option value="四川">四川省</option>
+                                            <option value="云南">云南省</option>
+                                            <option value="贵州">贵州省</option>
+                                            <option value="青海">青海省</option>
+                                            <option value="甘肃">甘肃省</option>
+                                            <option value="西藏">西藏省</option>
+                                            <option value="宁夏">宁夏省</option>
+                                            <option value="新疆">新疆省</option>
+                                            <option value="江西">江西省</option>
+                                            <option value="台湾">台湾省</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dd>
+                                        <select data-select style="width: 148px;" name="city" id="js-id-city">
+                                            <option value="0">地区</option>
+                                        </select>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <form id="adv-filter-form" onkeydown="if(event.keyCode==13)return false;">
+                            <input type="hidden" name="SearchSameBizId" value="0" />
+
+                            <div class="screen-item-list">
+                                <div class="item-t space-distance">过滤条件：</div>
+                                <div class="screen-item">
+                                    <label>原创号</label><input name="original" type="checkbox" value="1" class="control-checkbox" data-checkbox>
+                                    <label>认证号</label><input name="IsWeixinAuth" type="checkbox" value="1" class="control-checkbox" data-checkbox>
+                                    <label>视频号</label><input name="IsVideo" type="checkbox" value="1" class="control-checkbox" data-checkbox>
+                                    <label>服务号</label><input name="IsService" type="checkbox" value="1" class="control-checkbox" data-checkbox>
+
+                                    <label>已有投前分析</label><input name="IsTracking" type="checkbox" value="1" class="control-checkbox" data-checkbox>
+                                    <label>不显示已加入资源库的号</label><input name="IsCollect" type="checkbox" value="1" class="control-checkbox" data-checkbox>
+                                    <label>已有涉及小程序</label><input name="IsHasMiniApp" type="checkbox" value="1" class="control-checkbox" data-checkbox>
+                                </div>
+                            </div>
+                            <div class="screen-item-list">
+                                <h5 class="six-word">公众号过滤词：</h5>
+                                <div class="screen-item control-search-1 batch-filter-search batch-filter-search-1">
+                                    <input type="text" id="ExcludeWords" name="ExcludeWords" placeholder="多个过滤词用空格隔开，最多十个，结果不包含所有关键字">
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+                <div class="senior-search senior-search-new js-appdomain-options" style="display:none;">
+                    <div class="line"></div>
+                    <div class="choose-conditions js-article-conditions">
+                        <div class="screen-item-list">
+                            <div class="item-t five-space">已接入应用：</div>
+                            <div class="screen-item clearfix">
+
+                                <select name="RelationApp" data-select style="width:120px; max-height: 30px;">
+                                    <option value="0">不限</option>
+                                        <option value="金融服务">金融服务</option>
+                                        <option value="小说">小说</option>
+                                        <option value="院校">院校</option>
+                                        <option value="政务">政务</option>
+                                        <option value="地方站">地方站</option>
+                                        <option value="工具">工具</option>
+                                        <option value="H5">H5</option>
+                                        <option value="门户">门户</option>
+                                        <option value="营销">营销</option>
+                                        <option value="微站">微站</option>
+                                        <option value="视频">视频</option>
+                                        <option value="众筹">众筹</option>
+                                        <option value="表单">表单</option>
+                                        <option value="理财">理财</option>
+                                        <option value="微生活">微生活</option>
+                                        <option value="生活服务">生活服务</option>
+                                        <option value="O2O">O2O</option>
+
+                                </select>
+
+                                <select class="xxx input input-03" name="RelationAppValues" multiple>
+
+                                </select>
+                                <!--<div class="seniorTermRow">
+                且接入篇数
+                <input class="input input-02" type="text" name="" placeholder="" value="">
+                至
+                <input class="input input-02" type="text" name="" placeholder="" value="">
+            </div>-->
+                            </div>
+                        </div>
+                        <div class="screen-item-list">
+                            <div class="item-t five-space">未接入应用：</div>
+                            <div class="screen-item  clearfix">
+                                <select name="NoRelationApp" data-select style="width:120px; ">
+                                    <option value="0">不限</option>
+                                        <option value="金融服务">金融服务</option>
+                                        <option value="小说">小说</option>
+                                        <option value="院校">院校</option>
+                                        <option value="政务">政务</option>
+                                        <option value="地方站">地方站</option>
+                                        <option value="工具">工具</option>
+                                        <option value="H5">H5</option>
+                                        <option value="门户">门户</option>
+                                        <option value="营销">营销</option>
+                                        <option value="微站">微站</option>
+                                        <option value="视频">视频</option>
+                                        <option value="众筹">众筹</option>
+                                        <option value="表单">表单</option>
+                                        <option value="理财">理财</option>
+                                        <option value="微生活">微生活</option>
+                                        <option value="生活服务">生活服务</option>
+                                        <option value="O2O">O2O</option>
+                                </select>
+                                <select class="xxx input input-03" name="NoRelationAppValues" multiple></select>
+                            </div>
+                        </div>
+                        <div class="screen-item-list">
+                            <div class="item-t space-distance">排序方式：</div>
+                            <div class="screen-item  clearfix">
+                                <div class="other-conditions" id="js-id-bizsort">
+                                        <a href="javascript:void(0);" data-cond="5">匹配程度</a>
+                                    <a href="javascript:void(0);" data-cond="1">活跃粉丝数</a>
+                                    <a href="javascript:void(0);" data-cond="2">头条平均阅读</a>
+                                    <a href="javascript:void(0);" data-cond="3">头条平均点赞</a>
+
+                                    <a href="javascript:void(0);" data-cond="7">头条平均留言</a>
+
+                                    <a href="javascript:void(0);" data-cond="4">周发文篇数</a>
+                                    <a href="javascript:void(0);" data-cond="6">西瓜指数</a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="senior-search js-article-options" style="display: none">
+            <ul class="choose-conditions js-article-conditions">
+                <li>
+                    <h5 class="article-title">筛选区域：</h5>
+                    <div class="other-conditions " id="js-id-article-scope">
+                        <a href="javascript:void(0);" data-cond="t">文章标题</a>
+                        <a href="javascript:void(0);" data-cond="c">文章标题+内容</a>
+                        <a href="javascript:void(0);" data-cond="textonly">纯文本内容</a>
+                    </div>
+                </li>
+                <li>
+                    <h5 class="article-title">时间：</h5>
+                    <div class="other-conditions" id="js-id-article-time">
+                            <a href="javascript:void(0);" data-cond="1">24小时</a>
+                        <a href="javascript:void(0);" data-cond="7">7天</a>
+                        <a href="javascript:void(0);" data-cond="15">15天</a>
+                        <a href="javascript:void(0);" data-cond="30">30天</a>
+                        <a href="javascript:void(0);" data-cond="60">60天</a>
+                        <div class="choose-time-condition">
+                            <input type="text" name="TimeRange" readonly="" id="article_search_date" style="width: 210px" placeholder="    自定义日期">
+                            <a href="javascript:void(0);" class="on-close" id="btn_clear_searchdate" style="display: none"><i class="fa fa-close" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <h5 class="article-title">公众号去重：</h5>
+                    <div class="other-conditions only-essay" id="js-id-article-distinct">
+                        <a href="javascript:void(0);" data-cond="0" >不去重</a>
+                        <a href="javascript:void(0);" data-cond="1">去重</a>  <i class="fa fa-exclamation-circle fa-colorgray" data-toggle="tooltip" data-placement="top" data-original-title="开启后同一公众号的文章只显示一篇"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+          <div class="senior-search senior-search-new js-goods-options" style="display: none;">
+                <div class="line"></div>
+                <div class="choose-conditions">
+                    <div class="screen-item-list">
+                        <div class="item-t space-distance">商品品类：</div>
+                        <div class="other-conditions screen-item screen-item-p js-goods-class">
+                            <span class="tag-choose">
+                                <a href="javascript:;" data-name="" class="active">不限</a>
+                                <a href="javascript:;" data-name="书籍">书籍</a>
+                                <a href="javascript:;" data-name="护肤">护肤</a>
+                                <a href="javascript:;" data-name="彩妆">彩妆</a>
+                                <a href="javascript:;" data-name="服装">男装女装</a>
+                                <a href="javascript:;" data-name="日用百货">日用百货</a>
+                                <a href="javascript:;" data-name="鞋帽箱包">鞋帽箱包</a>
+                                <a href="javascript:;" data-name="美食饮品">美食饮品</a>
+                                <a href="javascript:;" data-name="母婴用品">母婴用品</a>
+                                <a href="javascript:;" data-name="珠宝配饰">珠宝配饰</a>
+                                <a href="javascript:;" data-name="手机数码">手机数码</a>
+                                <a href="javascript:;" data-name="花鸟宠物">花鸟宠物</a>
+                                <a href="javascript:;" data-name="玩具">玩具</a>
+                                <a href="javascript:;" data-name="游戏">游戏</a>
+                                <a href="javascript:;" data-name="家居家纺">家居家纺</a>
+                                <a href="javascript:;" data-name="礼品文娱">礼品文娱</a>
+
+                                <a href="javascript:;" data-name="厨房用品">厨房用品</a>
+                                <a href="javascript:;" data-name="旅游">旅游</a>
+                                <a href="javascript:;" data-name="汽车相关">汽车相关</a>
+                                <a href="javascript:;" data-name="洗护用品">洗护用品</a>
+                                <a href="javascript:;" data-name="养生保健">养生保健</a>
+
+                                <a href="javascript:;" data-name="其他">其他</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="screen-item-list">
+                        <div class="item-t space-distance">价格：</div>
+                        <div class="other-conditions screen-item screen-item-p js-goods-price">
+                            <span class="tag-choose">
+                                <a href="javascript:;" data-min="0" data-max="0" class="active">不限</a>
+                                <a href="javascript:;" data-min="1" data-max="50">1-50</a>
+                                <a href="javascript:;" data-min="50" data-max="100">50-100</a>
+                                <a href="javascript:;" data-min="100" data-max="300">100-300</a>
+                                <a href="javascript:;" data-min="300" data-max="500">300-500</a>
+                                <a href="javascript:;" data-min="500" data-max="1000">500-1000</a>
+                                <a href="javascript:;" data-min="1000" data-max="0">>1000</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="screen-item-list">
+                        <div class="item-t space-distance">全网销量：</div>
+                        <div class="other-conditions screen-item screen-item-p  js-goods-sold">
+                            <span class="tag-choose">
+                                <a href="javascript:;" data-min="0" data-max="0" class="active">不限</a>
+                                <a href="javascript:;" data-min="0" data-max="1000"><1千</a>
+                                <a href="javascript:;" data-min="1000" data-max="10000">1千-1万</a>
+                                <a href="javascript:;" data-min="10000" data-max="50000">1万-5万</a>
+                                <a href="javascript:;" data-min="50000" data-max="100000">5万-10万</a>
+                                <a href="javascript:;" data-min="100000" data-max="500000">10万-50万</a>
+                                <a href="javascript:;" data-min="500000" data-max="1000000">50万-100万</a>
+                                <a href="javascript:;" data-min="1000000" data-max="0">>100万</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="screen-item-list">
+                        <div class="item-t space-distance " style="letter-spacing: 0.6px;">近30天曝光量：</div>
+                        <div class="other-conditions screen-item screen-item-p  js-goods-read">
+                            <span class="tag-choose">
+                                <a href="javascript:;" data-min="0" data-max="0" class="active">不限</a>
+                                <a href="javascript:;" data-min="0" data-max="10000"><1万</a>
+                                <a href="javascript:;" data-min="10000" data-max="50000">1万-5万</a>
+                                <a href="javascript:;" data-min="50000" data-max="100000">5万-10万</a>
+                                <a href="javascript:;" data-min="100000" data-max="500000">10万-50万</a>
+                                <a href="javascript:;" data-min="500000" data-max="1000000">50万-100万</a>
+                                <a href="javascript:;" data-min="1000000" data-max="2000000">100万-200万</a>
+                                <a href="javascript:;" data-min="2000000" data-max="0">>200万</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-result search-result-style search-new-result"  style="padding-top: 81px;">
+        <div id="search-ressult-container">
+                <h3 class="pull-left" id="search-result-title">共搜索到1个结果，若找不到公众号<a href="javascript:void(0);" id="btnAddBiz" style="margin: 0px">请点击这里</a>
+
+                </h3>
+                        <div class="js-search-result">
+                <div class="search-result-list">
+
+
+
+
+    <div class="list-piece clearfix">
+
+
+
+<meta name="referrer" content="never">
+<div class="pull-left number-content">
+    <div class="related-number">
+        <div class="number-logo"><img src="//cdnlogo.xiguaji.com/BizLogo/MzI3OTAyNDI2OQ==.jpg-BizLogoCut?v=20190515001"></div>
+    </div>
+    <div class="number-describe">
+        <div class="number-details">
+            <h3>曲阳故事</h3>
+            <div class="n-qr-code">
+                <a href="javascript:void(0);"></a>
+                <div class="b-qr-code">
+                    <img src="https://mp.weixin.qq.com/mp/qrcode?scene=10000004&amp;size=102&amp;__biz=MzI3OTAyNDI2OQ==&amp;mid=2649902761&amp;idx=1&amp;sn=4f043c41c8517724129c58a1fedad884">
+                    <p>微信扫一扫关注他</p>
+                </div>
+            </div>
+                                            </div>
+        <div class="number-info">
+            quyanggushi
+
+
+            <span>
+账号主体：个人            </span>
+        </div>
+    </div>
+
+    <div class="a-items clearfix">
+        <div class="a-items-left">
+            <p>曲阳故事，让我们一起去听、去看、去寻找我们曲阳人自己的故事..</p>
+            <div class="function-decribe" style=display:none>
+                <div class="applet-list">
+                    <label>关联小程序：</label>
+                    <div class="applet-list-items">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a-items-right">
+            <div class="number-describe-item">
+
+                    <span class="item-tag"><a target="_blank" href="/Home#/Search/SearchAct/?type=1&key=$tag:视频">视频</a></span>
+                    <span class="item-tag"><a target="_blank" href="/Home#/Search/SearchAct/?type=1&key=$tag:法制">法制</a></span>
+                    <span class="item-tag"><a target="_blank" href="/Home#/Search/SearchAct/?type=1&key=$tag:交通">交通</a></span>
+                    <span class="item-tag"><a target="_blank" href="/Home#/Search/SearchAct/?type=1&key=$tag:育儿">育儿</a></span>
+                    <span class="item-tag"><a target="_blank" href="/Home#/Search/SearchAct/?type=1&key=$tag:曲阳县">曲阳县</a></span>
+                    <span class="item-tag"><a target="_blank" href="/Home#/Search/SearchAct/?type=1&key=$tag:保定市">保定市</a></span>
+            </div>
+        </div>
+    </div>
+
+        <div class="xigua-index">
+            西瓜指数 <i class="fa fa-exclamation-circle fa-colorgray" data-toggle="tooltip" data-placement="top" data-original-title="西瓜指数是系统基于公众号的活跃度、原创度、内容质量度、文章平均阅读等数据分析得出的综合评分"></i>
+            <span class="xigua-index-detail">408.2</span>
+        </div>
+    <div class="number-describe-details clearfix">
+        <div class="pull-left">
+            <ul class="number-describe-index clearfix">
+                <li>预估活跃粉丝<span>4514</span></li>
+                <li>头条平均阅读<span>331</span></li>
+                <li>头条平均点赞<span>4</span></li>
+                <li>头条平均留言<span>0</span></li>
+                <li>周发文篇数<span>49</span></li>
+
+            </ul>
+        </div>
+        <div class="pull-right">
+            <div class="number-describe-item">
+                <p><span>所属行业：</span>资讯 - 民生</p>
+                <p><span>运营地区：</span>曲阳县</p>
+                <p><span>注册时间：</span>3年以上</p>
+            </div>
+        </div>
+
+        <div class="add-library-pop" style="display:none" data-bizid="3052643" id="js-resource-3052643">
+            <div class="add-library-hd">
+    <div class="tag-put tag-ns" style="margin-right:30px">未投放  </div> <span id="js-bizGroupName-3052643"></span>
+    <a id="edit-Resourse-3052643" href="javascript:void(0)" class="redac btn_edit_colloct_record" data-bizid="3052643" data-gid="0"><i class="fa fa-pencil" aria-hidden="true"></i>编辑</a>
+</div>
+<div class="add-library-bd">
+    <div class="add-library-l">
+        <ul>
+            <li>联系人：<span>--</span></li>
+            <li>联系电话：<span>--</span></li>
+            <li>其他联系：<span>--</span></li>
+        </ul>
+        <ul>
+            <li>真实粉丝数：<span>--</span></li>
+            <li>头条报价：<span>--</span></li>
+            <li>次条报价：<span>--</span></li>
+        </ul>
+    </div>
+    <div class="add-library-r">
+        <h6>备注:</h6>
+        <div class="tag-label-area">
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+<div class="pull-right result-btns">
+    <div class="handle-btns">
+        <a href="javascript:void(0);" class="btn btn-detail btn-biz-detail" data-bizid="3052643" data-key="d2fac3">查看详情</a>
+            <a class="btn btn-detail" target="_blank" data-toggle="tooltip" data-placement="top"
+               data-original-title="该功能仅限高级会员及以上版本使用，升级即可使用。"
+               href="/Home#/Purchase">
+                查看相似号<i class="senior-tip-vip"></i>
+            </a>
+
+
+         <div class="p-price">
+             <a class="btn btn-detail js-userAdSurey"  onclick="LoadAdInfoAndContact(this)" onmouseout="DisplayAdInfo(this);" data-bizid="3052643" data-key="d2fac3" href="javascript:;">
+                 询问报价
+             </a>
+
+            <div class="price-pop" id="surey-status-3052643-1" style="display: none;">
+                <div class="price-pop-bd">
+                    <div class="offer-info">
+                        <p class="info">该公众号于 <span></span> 更新了报价信息</p>
+                        <p class="btns-box"><a href="javascript:ShowAdSurey(3052643);" class="btns-unified">查看报价</a></p>
+                        <p class="today-time">今日剩余次数<span></span>次</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-pop price-pop3" id="surey-status-3052643-2" style="display: none;">
+                <div class="price-pop-bd">
+                    <div class="offer-info1">
+                        <div class="update-time"><span class="js-sj"></span></div>
+                        <ul>
+                            <li>更新时间：<span class="js-sj"></span></li>
+                            <li>头条报价：￥<span class="js-p1"></span><span class="js-p11"></span></li>
+                            <li>次条报价：￥<span class="js-p2"></span><span class="js-p22"></span></li>
+                            <li>联系电话：<span class="js-phone"></span></li>
+                            <li>微信：<span class="js-weixin"></span></li>
+                            <li>邮箱：<span class="js-email"></span></li>
+                            <li>QQ：<span class="js-qq"></span></li>
+                            <li>接收广告类型：<span class="js-type"></span></li>
+                        </ul>
+                        <p class="btns-box"><a href="javascript:CloseAdSurey(3052643);" class="btns-unified">关闭</a></p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="price-pop" id="surey-status-3052643-3" style="display: none;">
+                 <div class="price-pop-bd">
+                     <div class="offer-info">
+                         <p class="info info1">该功能仅限高级版以上用户使用，请升级版本</p>
+                         <p class="btns-box"><a href="/Home#/Purchase/Pay?type=Luxury" class="btns-unified">立即升级</a></p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="price-pop" id="surey-status-3052643-4" style="display: none;">
+                 <div class="price-pop-bd">
+                     <div class="offer-info">
+                         <p class="info info1">您今日已经超过当前会员等级的查看次数</p>
+                         <p class="btns-box"><a href="/Home#/Purchase/Pay?type=Luxury" class="btns-unified">立即升级</a></p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="price-pop" id="surey-status-3052643-5" style="display: none;">
+                <div class="price-pop-bd">
+                    <div class="offer-info">
+                        <p class="info">该公众号暂无报价信息，请填写您的信息<br>我们将在24小时内将报价信息通过微信通知您</p>
+                        <p class="btns-box"><a href="javascript:AddAdSurey(3052643);" class="btns-unified">填写信息</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-pop" id="surey-status-3052643-6" style="display: none;">
+                <div class="price-pop-bd">
+                    <div class="offer-info" >
+                        <p class="info">信息已提交<br>我们将在24小时内将报价信息</p>
+                        <p class="btns-box"><a href="javascript:EditAdSurey(3052643);" class="btns-unified">编辑信息</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <a href="javascript:;" id="js-collect-3052643" class="btn btn-detail btn-biz-collect " data-bizid="3052643" data-iscollected="0">加入资源库<i class="tag-new"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-detail btn-analyse analyse-btn-disabled btn-biz-add-analyse" data-bizid="3052643">投前分析</a>
+    </div>
+</div>
+
+<div class="shade-layer js-layer-tip" id="AddBizAnalyseModal" style="display: none;">
+    <div class="modal-520 modal-630">
+        <div class="modal-header">
+            <div class="add-defined-name">提示</div>
+            <a href="javascript:;" data-dismiss="modal" aria-hidden="true">
+                <i class="icon-close js-know-btn"></i>
+            </a>
+        </div>
+        <div class="modal-body">
+            <div class="tip-item-title">该公众号暂无投前分析报告</div>
+            <div class="tip-item-list">
+                <dl>
+                    <dt class="img-1"></dt>
+                    <dd class="item-list-c">
+                        <h6>加入优先分析队列</h6>
+                        <p>加入系统优先分析队列，等待投前分析结果</p>
+                    </dd>
+                    <dd class="btns"><a href="javascript:;" class="btns-unified" id="btnAddAnalyseQueue">立即加入</a></dd>
+                </dl>
+                <dl>
+                    <dt class="img-2"></dt>
+                    <dd class="item-list-c">
+                        <h6>预约监控</h6>
+                        <p>预约发文时间，监控公众号下次发文数据</p>
+                    </dd>
+                    <dd class="btns"><a href="javascript:;" class="btns-unified" id="linkBizTrack">立即预约</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+//Get请求与Promise
+    var jqGetAjaxPromise = function (param) {
+        return new Promise(function (resolve, reject) {
+            $.ajax({
+                url: param.url,
+                type: 'get',
+                async: false,
+                data: param.data || '',
+                success: function (data) {
+                    resolve(data);
+                },
+                error: function (error) {
+                    reject(error)
+                }
+            });
+        });
+    };
+    var curlevel = 0;
+    $(".applet-list-item").unbind().on("mouseover", function () {
+
+        var $this = $(this);
+        var autoId = $this.attr("data-autoId");
+        var $pop = $this.find(".applet-pop");
+        $pop.stop(true);
+        var $name = $this.find("h6");
+        var $desc = $this.find(".applet-info");
+        var $company = $this.find(".applet-box>.applet-block>span");
+        var $referCount = $this.find(".applet-block>a>span");
+        var $referA = $referCount.parent();
+        var $qrCode = $this.find(".applet-code-img img");
+        var $url = "/Search/GetMiniAppInfo?miniAppAutoId=" + autoId;
+        var $flag = $(this).find("input:hidden");
+        if ($flag.val() == "0" && curlevel>1) {
+            $qrCode.one("error", function (e) {
+                $(this).attr("src", "/Content/images/miniQrCodeError.png");
+                $(this).parent().next("div").text("暂未获取小程序码");
+            });
+            var p2 = jqGetAjaxPromise({
+                url: $url,
+
+            });
+            p2.then(function (data) {
+                $name.text(data.Name);
+                $desc.text(data.Desc);
+                $company.text(data.Company);
+                $referCount.html(data.ReferBizCount + "个" + '<i class="fa fa-angle-right" aria-hidden="true"></i>');
+                var url = "#/Search/SearchAct?key=$miniapp:" + encodeURIComponent(data.Name) + "&miniAppId=" + autoId;
+                $referA.attr("href", url);
+                $qrCode.attr("src", data.RealQrCode);
+                $flag.val(1);
+            }).then(function () {
+                $this.siblings().find(".applet-pop").hide();
+                $pop.show()
+            })
+
+        } else {
+            $pop.show();
+        }
+        $this.siblings().find(".applet-pop").hide();
+
+
+    }).mouseout( function () {
+        var $this = $(this);
+        var $pop = $this.find(".applet-pop");
+
+        $pop.delay(100).hide(0);
+        })
+    $(".applet-list-item>img").one("error", function(e){
+        $(this).attr("src", "/Content/images/miniAppLogo.png");
+    });
+    $(".applet-cover>img").one("error", function (e) {
+        $(this).attr("src", "/Content/images/miniAppLogo.png");
+    });
+    $(".p-price").on("mouseover",
+    function() {
+        if (timer2) {
+            clearTimeout(timer2);
+        }
+    });
+</script>
+
+
+
+    </div>
+                </div>
+
+                <div class="load-more">
+                </div>
+
+
+                <input type="hidden" name="pageIndex" value="1"/>
+                <input type="hidden" name="request-ing" value="0"/>
+                <input type="hidden" name="show-list" value="1"/>
+            </div>
+        </div>
+<div class="main-750" style="display: none" id="container-no-results">
+    <div class="dn-results icon-search-result">
+        <div class="search-tips">您可以尝试输入该公众号的任意一篇发文链接，系统将自动收录该公众号以便今后查询。</div>
+        <div class="control-search-box">
+            <div class="control-search-1 s-control-search">
+                <input type="text" placeholder="请输入公众号发文地址" name="aurl">
+            </div>
+            <a href="javascript:;" class="control-search-1-submit js-search-add">搜索</a>
+        </div>
+        <div class="error js-search-add-error"></div>
+        <div class="p-dialogue-result js-search-add-block" style="display: none">
+        </div>
+        <div class="p-dialogue-btns" style="display: none"><a href="javascript:;" class="btns-unified js-search-add-btn">添加该公众号</a></div>
+    </div>
+
+</div>
+
+<div class="mask js-search-add-tip js-search-add-tip-mask" style="display: none"></div>
+<div class="dialog dialog-add js-search-add-tip" style="display: none">
+    <i class="add-succeed"></i>
+    <h3>添加成功</h3>
+    <p>
+        系统将自动开始收录该公众号，<br>
+        您可先通过文章链接搜索该公众号，<br>
+        部分数据须等待几日才可展现。
+    </p>
+    <div class="p-dialogue-btns"><a href="javascript:;" class="btns-unified js-search-tip-btn">确定</a>
+    </div>
+</div>
+
+<script>
+    $('.js-search-add').unbind().click(SearchByArticleUrl);
+    $('input[name=aurl]').bind('keypress', function(e) {
+        if (e.keyCode === 13) {
+            SearchByArticleUrl();
+        }
+    });
+    function SearchByArticleUrl() {
+        $('.js-search-add-error').html('');
+        $('.js-search-add-block').hide();
+        $('.js-search-add-btn').parent().hide();
+        var key = $('input[name=aurl]').val().trim();
+        if (key === "") {
+            $('.js-search-add-error').html('关键词不能为空');
+            return;
+        }
+        if (key.indexOf('http') < 0  || !CheckUrl(key)) {
+            $('.js-search-add-error').html('您输入的链接有误，请重新输入');
+            return;
+        }
+        $('.js-search-add-block').html("<div class=\"load-more\"><i class=\"load\"></i>正在加载</div>");
+        $('.js-search-add-block').show();
+        var url = "/Search/CheckBiz/?key=" + encodeURIComponent(key);
+        $.ajax({
+            url: url,
+            success: function (data) {
+                if (data.status) {
+                    var biz = data.biz;
+                    var html = '<div class="media-list" data-bid="' + biz.BizId + '">' +
+                        '<div class="item-media"><img src="' + biz.LogoUrl + '"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">' + biz.BizName +'</div>' +
+                        '<div class="item-sub-title">' + biz.Wechatid + '</div>' +
+                        '<div class="item-content">' + biz.Desc + '</div>' +
+                        '</div>' +
+                        '</div>';
+                    $('.js-search-add-block').html(html);
+                    $('.js-search-add-btn').parent().show();
+                    return;
+                } else {
+                    $('.js-search-add-error').html(data.msg);
+                    $('.js-search-add-block').hide();
+                    return;
+                }
+            }
+        });
+        return;
+    }
+
+    $('.js-search-add-btn').click(function() {
+        if ($('.js-search-add-block').find('.media-list').length === 0)
+            return;
+        var bid = $('.js-search-add-block').find('.media-list').first().data('bid');
+        $.ajax({
+            url: '/Search/AddMbiz?bid=' + bid,
+            success: function(data) {
+                if (data.status) {
+                    // 防止双击
+                } else {
+                    //$('.js-search-add-error').html(data.msg);
+                }
+            }
+        });
+        $('.js-search-add-tip').show();
+        $('.js-search-add-btn').parent().hide();
+    });
+    $('.js-search-tip-btn').click(CloseAddMbizTip);
+    $(".js-search-add-tip-mask").click(function (e) {
+        if ($(".js-search-add-tip-mask").is(e.target)) {
+            CloseAddMbizTip();
+        }
+    });
+
+    function CloseAddMbizTip() {
+        $('.js-search-add-tip').hide();
+        var key = $('input[name=aurl]').val().trim();
+        $('input[name=key]').val(key);
+    }
+</script>    </div>
+</div>
+
+<div class="corporate-account-layer" style="display:none" id="modal_appdomain">
+</div>
+<div class="corporate-account-layer" style="display:none" id="modal_collect_edit_container">
+</div>
+<div class="corporate-account-layer search-detail" style="display:none" id="modal_container">
+</div>
+<script src="/Content/js/bootstrap.min.js"></script>
+
+<script src="/Content/js/pager.js?ver=456"></script>
+
+<script>
+    // radio样式
+    try {
+        $('[data-checkbox]').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+            increaseArea: '20%'
+        });
+    } catch (err) {
+        console.log(err);
+    }
+
+
+
+    $('#js-id-matching').find('a').each(function(){
+        if($(this).data('cond')=='n'){
+            $(this).addClass('active');
+        }
+
+    });
+
+    var aFilterMatching = 'n';
+    if ( aFilterMatching== 't'){
+        $('.js-search-condtion-industry').hide();
+    }
+    else if (aFilterMatching == 'a') {
+        $("#adv-choose-cond li:gt(0)").hide();
+        $(".js-choose-conditions div.screen-item-list:gt(0)").hide();
+        $(".js-appdomain-options").hide();
+
+        $("#adv-filter-cond").hide();
+    }
+
+    $('#js-id-price').find('a').each(function(){
+        if($(this).data('cond')=='0'){
+            $(this).addClass('active');
+        }
+    });
+    $('#js-id-read').find('a').each(function(){
+        if($(this).data('cond')=='0'){
+            $(this).addClass('active');
+        }
+    });
+    $('#js-id-fans').find('a').each(function(){
+        if($(this).data('cond')=='0'){
+            $(this).addClass('active');
+        }
+    });
+    $('#js-id-industry').find('a').each(function(){
+        if($(this).data('cond')=='0'){
+            $(this).addClass('active');
+        }
+    });
+    $('#js-id-bizsort').find('a').each(function(){
+        if($(this).data('cond')=='5'){
+            $(this).addClass('active');
+        }
+    });
+
+    $('#js-id-guazhishu').find('a').each(function(){
+        if($(this).data('cond')=='0'){
+            $(this).addClass('active');
+        }
+    });
+
+
+    $("select[name='js-id-CustomerType'] option[value='-1']").attr("selected", true);
+    $("select[name='js-id-Ratio'] option[value='0']").attr("selected", true);
+    $("select[name='js-id-Register'] option[value='0']").attr("selected", true);
+
+    $("select[name='js-id-price'] option[value='0']").attr("selected", true);
+    $("select[name='js-id-read'] option[value='0']").attr("selected", true);
+    $("select[name='js-id-fans'] option[value='0']").attr("selected", true);
+    $("select[name='js-id-industry'] option[value='0']").attr("selected", true);
+    $("select[name='js-id-guazhishu'] option[value='0']").attr("selected", true);
+
+    $("select[name='js-id-lastpubday'] option[value='0']").attr("selected", true);
+
+    var originalChecked = '0' == '1';
+    var weixinAuthChecked = '0' == '1';
+    var youFenBaMark = '0' == '1';
+    var videoChecked = '0' == '1';
+    var serviceChecked = '0' == '1';
+
+    var trackingChecked = '0' == '1';
+
+    var collectChecked = '0' == '1';
+    var hasMiniAppChecked = '0' == '1';
+
+            $('#adv-filter-form input[name="original"]').prop("checked", originalChecked);
+            $('#adv-filter-form input[name="IsWeixinAuth"]').prop("checked", weixinAuthChecked);
+            $('#adv-filter-form input[name="youfenbamark"]').prop("checked", youFenBaMark);
+            $('#adv-filter-form input[name="IsVideo"]').prop("checked", videoChecked);
+            $('#adv-filter-form input[name="IsService"]').prop("checked", serviceChecked);
+
+            $('#adv-filter-form input[name="IsTracking"]').prop("checked", trackingChecked);
+
+            $('#adv-filter-form input[name="IsCollect"]').prop("checked", collectChecked);
+            $('#adv-filter-form input[name="IsHasMiniApp"]').prop("checked", hasMiniAppChecked);
+            try {
+                $('#adv-filter-form input[type="checkbox"]').iCheck('update');
+            } catch (err) {
+                console.log(err);
+            }
+
+             $('select[name=position]').parent().parent().find('a').addClass('active');
+
+
+    $('#js-id-article-scope').find('a').each(function(){
+        if($(this).data('cond')=='t'){
+            $(this).addClass('active');
+        }
+    });
+
+    var timeRange = '';
+    if (timeRange.length <=10) {
+        $('#js-id-article-time').find('a').each(function(){
+            if($(this).data('cond')=='1'){
+                $(this).addClass('active');
+            }
+        });
+    }
+    else {
+        $("#article_search_date").val(timeRange);
+        $("#article_search_date").parent().addClass("choose-time-condition-active");
+        $("#btn_clear_searchdate").show();
+    }
+
+    $('#js-id-article-distinct').find('a').each(function(){
+        if($(this).data('cond')=='0'){
+            $(this).addClass('active');
+        }
+    });
+    $('i.icon_essay-la').each(function(){
+        if($(this).data('order')=='f'){
+            $(this).addClass('icon_essay-la-green');
+        }
+    });
+
+
+    // select 样式
+    var timeSelect = $('[data-select]').select2({ minimumResultsForSearch: -1 });
+
+    var liLength = $("#adv-filter-icons li").length;
+    if (liLength <= 0) {
+        $("#search-result-title").removeClass("pull-left");
+    }
+
+    $(function () {
+        $('.xxx').select2({
+            language: "zh-CN",
+            maximumSelectionLength: 5
+        });
+
+        $(".xxx").on("select2:select", function () {
+            AjaxForm2();
+        });
+        $(".xxx").on("select2:unselect", function () {
+            AjaxForm2();
+            var RelationAppValues = GetFilter("RelationAppValues");// $('select[name="RelationAppValues"]').val();
+            var NoRelationAppValues = GetFilter("NoRelationAppValues");// $('select[name="NoRelationAppValues"]').val();
+            if ((RelationAppValues !== '' && RelationAppValues.length > 0) || (NoRelationAppValues != '' && NoRelationAppValues.length > 0)) {
+                $(".xxx").select2("destroy");
+            }
+            //$(".xxx").select2("destroy");
+        });
+
+        InitApp();
+
+    });
+
+    function InitApp() {
+        var relationAppVal = '';
+        var norelationAppVal = '';
+        var relationApp = '';
+        var norelationApp='';
+        console.log(relationAppVal);
+        console.log(norelationAppVal);
+        console.log(relationApp);
+
+        $("select[name='RelationApp'] option[value='" + relationApp + "']").attr("selected", true).trigger('change.select2');
+        $("select[name='NoRelationApp'] option[value='" + norelationApp + "']").attr("selected", true).trigger('change.select2');
+
+        if (relationApp == '0') {
+            $("select[name='RelationApp'] option[value='小说']").attr("selected", true).trigger('change');
+        }
+        if (norelationApp == '0') {
+            $("select[name='NoRelationApp'] option[value='小说']").attr("selected", true).trigger('change');
+        }
+
+        ResetRelationAppValues("RelationApp", relationAppVal);
+        ResetRelationAppValues("NoRelationApp", norelationAppVal);
+
+       // $('select[name="RelationAppValues"]').val(relationAppVal.split(',')).trigger('change.select2');
+       // $('select[name="NoRelationAppValues"]').val(norelationAppVal.split(',')).trigger('change.select2');
+    }
+
+    $('select[name="RelationApp"]').bind('change', function () {
+        // console.log(this);
+        ResetRelationAppValues("RelationApp",'');
+
+    });
+
+    $('select[name="NoRelationApp"]').bind('change', function () {
+        //console.log(this);
+        ResetRelationAppValues("NoRelationApp",'');
+
+    });
+
+    function ResetRelationAppValues(elementname,setval) {
+        var category = $('select[name="' + elementname + '"]').val();
+        console.log(category);
+        if (category !== '0') {
+            $.ajax({
+                type: "get",
+                url: "/Search/GetAppDomainList?category=" + category,
+                success: function (res) {
+                    console.log(res);
+                    var appvaluesHtml = "";
+                    for (var i = 0; i < res.length; i++) {
+                        appvaluesHtml += '<option value="' + res[i].DomainUrl + '">' + res[i].Name + "(" + res[i].DomainUrl + ")" + '</option>';
+                    }
+                    $('select[name="' + elementname + 'Values"]').html(appvaluesHtml);
+                    $('select[name="' + elementname + 'Values"]').trigger('change.select2');
+
+                    $('select[name="' + elementname + 'Values"]').val(setval.split(',')).trigger('change.select2');
+
+                }
+            });
+        }
+        else {
+            $('select[name="' + elementname + 'Values"]').html('');
+            $('select[name="' + elementname + 'Values"]').trigger('change.select2');
+        }
+    }
+
+
+</script>
+<script src="/Content/js/xigua.bizlist.js?v=20190111"></script>
+<script>
+    var userLevel = 0;
+    var options = {
+        userLevel :  0,
+        total :  1,
+        pageCount :  1,
+        minSearchDate: new Date('2019/3/23 11:04:33'),
+        miniAppId:0,
+    };
+
+    var isGetAjaxContent = true;
+    //基本搜索排序
+    $("#js-id-basebizsort a").on("click",
+        function() {
+            $(this).parent().parent().find('a').removeClass('active');
+            $(this).addClass('active');
+            if (userLevel == 0 && GetFilter("basebizsort")!=5) {
+                var info = '<div class="dn-results search-disabled"> <h6>无法使用</h6> <p>抱歉，您当前的会员等级无法使用此功能，您可以<a href="#/Purchase">购买或升级会员</a></p></div>';
+                $('.search-result-list').html(info);
+                $(".load-more").hide();
+                return;
+            }
+            if (!isGetAjaxContent) {
+                return;
+            }
+            $(".search-result-list").html("");
+            isGetAjaxContent = false;
+            GetAjaxContent(1);
+            InitPage(pageTotalCount, GetAjaxContent);
+
+
+
+        });
+
+    $("#adv-filter-icons li i").on("click", function () {
+        $this = $(this).parent();
+        var formName= $this.data("name");
+        var formRawValue= $this.data("rawvalue");
+
+        $("select[name='js-id-"+formName+"'] option[value='"+formRawValue+"']").attr("selected", true);
+        $('input[name="js-id-'+formName+'"]').prop("checked", false);
+        AjaxForm2();
+    })
+
+    $("#ul_searchType input").on("ifChecked",function(){
+        var type = $("input[name='type']:checked").val().trim();
+        var level =userLevel;
+        if (type != '5') {
+            $(".senior-mask-content").hide();
+        }else if (level < 2) {
+            $(".senior-mask-content").show();
+        }
+        //var matching = GetFilter("matching");
+
+        //if (type === '1') {
+        //    $('.control-search-1-submit').removeClass('submit-disabled');
+        //}
+
+        //if (type === '4') {
+        //    if (level <= 1) {
+        //        $('.control-search-1-submit').addClass('submit-disabled');
+        //    }
+        //    else {
+        //        $('.control-search-1-submit').removeClass('submit-disabled');
+        //    }
+
+        //}
+
+        //if (type === '5' && level < 3) {
+        //    $('.control-search-1-submit').addClass('submit-disabled');
+        //}
+    })
+
+    //选择搜索类型
+    // 搜索框
+    function AjaxForm2() {
+        var key = $("input[name='key']").val().trim();
+        var type = $("input[name='type']:checked").val().trim();
+        var level =userLevel;
+        var matching = GetFilter("matching");
+
+        //文章检索制定西瓜关键词
+        if (type == '5' && level < 2) {
+            key = "西瓜";
+        }
+
+        // 权限
+        if (level != 0) {
+            if (type === '2' && level < 2) {
+                $('.control-search-1-submit').addClass('submit-disabled');
+                var info = '<div class="dn-results search-disabled"> <h6>无法使用</h6> <p>抱歉，您当前的会员等级无法使用此功能，您可以<a href="#/Purchase">购买或升级会员</a></p></div>';
+                $('.search-result').html(info);
+                return;
+            }
+            if (type=='4' && level < 3 && matching == 'a') {
+                $('.control-search-1-submit').addClass('submit-disabled');
+                var info = '<div class="dn-results search-disabled"> <h6>无法使用</h6> <p>抱歉，您当前的会员等级无法使用此功能，您可以<a href="#/Purchase">购买或升级会员</a></p></div>';
+                $('.search-result').html(info);
+                return;
+            }
+
+            if (type === '4' && level < 2) {
+                $('.control-search-1-submit').addClass('submit-disabled');
+                var info = '<div class="dn-results search-disabled"> <h6>无法使用</h6> <p>抱歉，您当前的会员等级无法使用此功能，您可以<a href="#/Purchase">购买或升级会员</a></p></div>';
+                $('.search-result').html(info);
+                return;
+            }
+            /*
+            if (type === '5' && level < 2) {
+                $('.control-search-1-submit').addClass('submit-disabled');
+                var info = '<div class="dn-results search-disabled"> <h6>无法使用</h6> <p>该功能仅限高级会员、豪华会员使用，您可以<a href="#/Purchase">购买或升级会员</a></p></div>';
+                $('.search-result').html(info);
+                return;
+            }*/
+
+            if (type === '3' && level < 3) {
+                $('.control-search-1-submit').addClass('submit-disabled');
+                var info = '<div class="dn-results search-disabled"> <h6>无法使用</h6> <p>抱歉，您当前的会员等级无法使用此功能，您可以<a href="#/Purchase">购买或升级会员</a></p></div>';
+                $('.search-result').html(info);
+                return;
+            }
+        }
+        $('.function-prompts').hide().html('');
+        // 关键词为空时样式切换
+        if (key === "" && type !== '4' && type !== '7') {
+            if (type == '5') {
+                if ($(".js-put-up").css('display') !== 'none') {
+                    // 折叠
+                    $('.d-main').addClass('goods-query');
+                } else {
+                    // 展开 修改
+                    $('.d-main').addClass('articles-query');
+                }
+            } else {
+                $('.d-main').addClass('goods-query');
+            }
+            $(".control-search-tip").text("关键词不能为空").show();
+            AutoAdapt();
+            return;
+        }
+        // 高级搜索
+        if (key === "" && type === '4' && GetFilter("matching") == 'n' && NoneAdvancedFilter()) {
+            if ($(".js-put-up").css('display') !== 'none') {
+                // 折叠
+                $('.d-main').addClass('goods-query');
+            } else {
+                // 展开 修改
+                $('.d-main').addClass('seniors-query');
+            }
+            $(".control-search-tip").text("关键词和筛选条件不能同时为空").show();
+            AutoAdapt();
+            return;
+        }
+        // 主题词搜索
+        if (key === "" && type === '4' && GetFilter("matching") != 'n') {
+            if ($(".js-put-up").css('display') !== 'none') {
+                // 折叠
+                $('.d-main').addClass('goods-query');
+            } else {
+                // 展开 修改
+                $('.d-main').addClass('seniors-query');
+            }
+            $(".control-search-tip").text("类型匹配关键词不能为空").show();
+            AutoAdapt();
+            return;
+        }
+        // 文章链接错误提示
+        if ((key.indexOf('http:') >= 0 || key.indexOf('https:') >= 0) && !CheckUrl(key)) {
+            if (type == '5') {
+                if ($(".js-put-up").css('display') !== 'none') {
+                    // 折叠
+                    $('.d-main').addClass('goods-query');
+                } else {
+                    // 展开 修改
+                    $('.d-main').addClass('articles-query');
+                }
+            } else if (type == '4') {
+                if ($(".js-put-up").css('display') !== 'none') {
+                    // 折叠
+                    $('.d-main').addClass('goods-query');
+                } else {
+                    // 展开 修改
+                    $('.d-main').addClass('seniors-query');
+                }
+            } else {
+                $('.d-main').addClass('goods-query');
+            }
+            $(".control-search-tip").text("您输入的链接有误，请重新输入").show();
+            AutoAdapt();
+            return;
+        }
+        // 竞品判断
+        if (type === '2' && key.indexOf('http') < 0 && !CheckComSth(key)) {
+            $('.d-main').addClass('goods-query');
+            $(".control-search-tip").text("竞品查询仅支持公众号ID或历史发文地址搜索").show();
+            AutoAdapt();
+            return;
+        }
+        // 合法查询
+        $('.d-main').removeClass('goods-query');
+        $(".control-search-tip").hide().text("");
+
+        var setPageSizeSubmit = getCookie("setPageSize");
+        var setPageSizeParam = "";
+        if (setPageSizeSubmit != null && (setPageSizeSubmit == 20 || setPageSizeSubmit == 50)) {
+            //setPageSizeParam = "&setPageSize=" + setPageSizeSubmit;
+        }
+        var url = "#/Search/SearchAct/?type=" + type + "&key=" + encodeURIComponent(key) + "&miniAppId=" + options.miniAppId + setPageSizeParam;
+        console.log("url", url);
+        if (type === '4')
+            url += GetAdvancedQuery();
+        else if (type === '5')
+            url += GetArticleQuery();
+        else if (type === '7') {
+            url += GetGoodsSearchParam();
+        }
+        // 加载动效
+        $(".search-result").html("<div class=\"load-more\" style=\"margin-top: 200px\"><i class=\"load\"></i>正在加载</div>");
+        if (url === location.hash) {
+            goHash();
+            return;
+        }
+        location.hash = url;
+        return;
+    }
+
+    // 输入框回车指定事件
+    $("input[name='key']").bind('keypress', function(event) {
+        if (event.keyCode === 13) {
+            AjaxForm2();
+        }
+    });
+
+    //写cookies
+    function setCookie(name, value) {
+        var Days = 30;
+        var exp = new Date();
+        exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+    }
+    //读取cookies
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+
+    function GetAjaxContent(pageIndex) {
+        //var level = options.userLevel;
+        var level =0;
+        var optionstotal =1;
+        var optionsminiAppId =0;
+        var optionspageCount =1;
+
+        var type = $("input[name='type']:checked").val().trim();
+
+        var isInSideUser = 0;
+
+        //每页条数
+        var setPageSize = parseInt($('#pageSizeSelect').val());
+        var cookie_pageSize = getCookie("setPageSize");
+        if (cookie_pageSize!=null) {
+            //setPageSize = cookie_pageSize;
+            console.log("getcookie:" + cookie_pageSize + ",setPageSize:" + setPageSize);
+        }
+        if (pageIndex !=1 && (optionstotal === 0 || optionspageCount === 1 || level === 0 || $("input[name='request-ing']").val().trim() === '1' || $("input[name='show-list']").val().trim() === '0'))
+            return;
+        // 模糊搜索最大请求页
+        var maxPage;
+        switch (level) {
+            case 1:
+                maxPage = 3;
+                break;
+            case 2:
+                maxPage = 5;
+                break;
+            case 3:
+                maxPage = 15;
+                break;
+            case 4:
+                maxPage = 50;
+                break;
+            default:
+                maxPage = 1;
+        }
+        if (setPageSize == 50) {
+            maxPage = level === 3 ? 6 : level === 2 ? 2 : 1;
+            switch (level) {
+                case 1:
+                    maxPage = 1;
+                    break;
+                case 2:
+                    maxPage = 2;
+                    break;
+                case 3:
+                    maxPage = 6;
+                    break;
+                case 4:
+                    maxPage = 20;
+                    break;
+                default:
+                    maxPage = 1;
+            }
+        }
+
+        //增加判断
+        if (isInSideUser === 1 && type != '5' && type != '6') {
+            maxPage = setPageSize == 50 ? 20 : 50;
+        }
+
+        var pageCount = Math.ceil(optionstotal / setPageSize);
+        //var pageCount = options.pageCount;
+
+        console.log(setPageSize);
+        var askIndex = pageIndex;//parseInt($("input[name='pageIndex']").val().trim()) + 1;
+        if (askIndex > pageCount) {
+            $(".load-more").html("没有更多内容");
+            return;
+        }
+        if (askIndex > maxPage) {
+            if (isInSideUser === 1 && type != '5' && type != '6') {
+                $(".load-more").html("只可以查看1000个结果，您可以<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">购买或升级会员</a>查看更多");
+                return;
+
+            } else {
+                if (level === 2) {
+                    $(".load-more").html("高级会员可以查看100个结果，您可以<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">购买或升级会员</a>查看更多");
+                } else if (level === 3) {
+                    $(".load-more").html("豪华会员可以查看300个结果，您可以<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">升级为企业版</a>查看更多");
+                } else if (level === 1) {
+                    $(".load-more").html("基础会员可以查看50个结果，您可以<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">购买或升级会员</a>查看更多");
+                } else if (level === 4) {
+                    $(".load-more").html("企业会员可以查看1000个结果，如果您有更多数据需求，请联系<a href=\"tencent://message/?uin=37895465&Site=&Menu=yes\" style=\"color: #3b99d9 !important;display:inline;\">定制服务客服</a>");
+                }
+                return;
+            }
+
+        }
+
+
+        var t4_l2_LimitIndex = setPageSize == 20 ? 5 : 2;
+        var t4_l3_LimitIndex = setPageSize == 20 ? 15 : 6;
+       // var t5_l2_LimitIndex = setPageSize == 20 ? 8 : 3;
+        var t5_l2_LimitIndex = setPageSize == 20 ? 5 : 2;
+        var t5_l3_LimitIndex = setPageSize == 20 ? 15 : 6;
+
+        //增加判断
+        if (isInSideUser === 1 && type!='5' && type!='6') {
+            if (setPageSize == 20) {
+                if (askIndex > 50) {
+                    $(".load-more").html("只可以查看1000个结果，您可以<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">购买或升级会员</a>查看更多");
+                    return;
+                }
+            }
+            else {
+                if (askIndex > 20) {
+                    $(".load-more").html("只可以查看1000个结果，您可以<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">购买或升级会员</a>查看更多");
+                    return;
+                }
+            }
+        }
+        else {
+
+            if (type === '4') {
+                if (level === 2 && askIndex > t4_l2_LimitIndex) {//2  5
+                    $(".load-more").html("高级会员可以查看100个结果，您可以<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">购买或升级会员</a>查看更多");
+                    return;
+                }
+                if (level === 3 && askIndex > t4_l3_LimitIndex) {//6
+                    $(".load-more").html("豪华会员可以查看300个结果，如果您有更多数据需求，请升级为<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">企业版</a>查看更多");
+                    return;
+                }
+            }
+            if (type === '5') {
+                if (level === 2 && askIndex > t5_l2_LimitIndex) {//3  8 第八页时，只返回10条
+                    $(".load-more").html("高级会员可以查看100个结果，您可以<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">购买或升级会员</a>查看更多");
+                    return;
+                }
+                if (level === 3 && askIndex > t5_l3_LimitIndex) {//6  15
+                    $(".load-more").html("豪华会员可以查看300个结果，如果您有更多数据需求，请升级为<a href=\"#/Purchase\" style=\"color: #3b99d9 !important;display:inline;\">企业版</a>查看更多");
+                    return;
+                }
+            }
+
+        }
+
+
+
+        if (level >0 || type === '1' ) {
+            var key = $("input[name='key']").val().trim();
+            if (key === "" && type !== '4' && type !== '7')
+                return;
+            var $url = "/Search/SearchAct/?type=" + type + "&pageIndex=" + askIndex + "&cursize="+setPageSize+"&key=" + encodeURIComponent(key) + "&miniAppId=" + optionsminiAppId + "&IsAjaxRequest=1";
+            if (type === '4')
+                $url += GetAdvancedQuery();
+            if (type === '5')
+                $url += GetArticleQuery();
+            if (type === '1') {
+                var basesort = GetFilter("basebizsort");
+                $url += "&BizSort=" + basesort;
+            }
+            if (type === '6') {
+                var domainSortType = 0;
+                $(".js-search-domain-sort").each(function(index, el) {
+                    if ($(this).hasClass("icon_essay-la-green")) {
+                        domainSortType = $(this).data("order");
+                    }
+                });
+                $url += "&SortType=" + domainSortType;
+            }
+            if (type === '7') {
+                $url += GetGoodsSearchParam();
+            }
+            var dataType = parseInt(type);
+            // 开始请求
+            $(".load-more").css('margin-top', '20px').html("<i class=\"load\"></i>正在加载"); // 显示加载
+            $("input[name='request-ing']").val(1); // 设置请求中状态, 防止二次加载
+            $.ajax({
+                url: $url,
+                success: function (data) {
+                    isGetAjaxContent = true;
+                    if (data.status === 0) {
+                        $(".load-more").text(data.msg);
+                    } else {
+                        var html = data;
+                        if (dataType < 5) {
+                            //$(".search-result-list").append(html);
+                            $(".search-result-list").html(html);
+                        }else if (dataType == 6) {
+                            //$(".search-result-list").append(html);
+                            $("#js-id-domain-list").html(html);
+                        }else if (dataType == 7) {
+                            //$(".search-result-list").append(html);
+                            $("#js-id-goods-list").html(html);
+                        }else {
+                            try {
+                                //$('#js-id-article-list').append(html);
+                                $("#js-id-article-list").html(html);
+
+                                $("a.js-article-comment-searcharticle").unbind().on("click", getArticleCommentByArticleSearch);
+                            } catch (e) {
+                            }
+                        }
+                        $(".load-more").html("");
+                    };
+                    // 请求结束
+                    $("input[name='pageIndex']").val(askIndex);
+                    $("input[name='request-ing']").val(0);
+
+                    bindBizListEvent(userLevel);
+                    if (data.status != 0) {
+                        $(".d-main")[0].scrollTop = 0;
+                    }
+
+                }
+            });
+        }
+        return;
+    }
+
+    //文章排序点击
+    $("i.icon_essay-la").click(function(){
+        var type = $("input[name='type']:checked").val().trim();
+        if (type == '6' || type == '7') {
+            return;
+        }
+        //$("#page1").children("li").removeClass("active");
+        //$("#page1").find("li[page=1]").addClass("active");
+        InitPage(pageTotalCount, GetAjaxContent);
+
+        var key = $("input[name='key']").val().trim();
+
+
+        if (type !== '5' && type !== '6') {
+                $(".control-search-tip").text("请选择文章搜索").show();
+                AutoAdapt();
+                return;
+        }
+
+        if (key === "") {
+            $(".control-search-tip").text("关键词不能为空").show();
+                AutoAdapt();
+                return;
+        }
+
+        $(this).parent().siblings("th").children("i.icon_essay-la").removeClass("icon_essay-la-green");
+        if ($(this).hasClass("icon_essay-la-green")) {
+            return;
+        }
+        $(this).addClass("icon_essay-la-green");
+
+        if ($("input[name='request-ing']").val().trim() === '1' || options.total <= 0) {
+            return;
+        }
+
+        var askIndex = 1;
+        var key = $("input[name='key']").val().trim();
+        var type = $("input[name='type']:checked").val().trim();
+        var $url = "/Search/SearchAct/?type=" + type + "&pageIndex=" + askIndex + "&key=" + encodeURIComponent(key) + "&IsAjaxRequest=1" ;
+        $url += GetArticleQuery();
+
+        // 开始请求
+        $("#js-id-article-list").html("");
+        $(".load-more").css('margin-top', '20px').html("<i class=\"load\"></i>正在加载"); // 显示加载
+        $("input[name='request-ing']").val(1); // 设置请求中状态, 防止二次加载
+        $.ajax({
+            url: $url,
+            success: function(data) {
+                if (data.status === 0) {
+                    $(".load-more").text(data.msg);
+                } else {
+                    $('#js-id-article-list').html(data);
+                    $(".load-more").html("");
+
+                    $("a.js-article-comment-searcharticle").unbind().on("click", getArticleCommentByArticleSearch);
+                };
+                // 请求结束
+                $("input[name='pageIndex']").val(askIndex);
+                $("input[name='request-ing']").val(0);
+
+                bindBizListEvent(userLevel);
+            }
+        });
+    })
+
+    // 生成单个searchModel的html
+    function MakeSectionHtml(item) {
+        var qrCode = item.QrCode;
+        var fans = item.Fans > 0 ? item.Fans : "暂无";
+        var read = item.Top24Read > 0 ? item.Top24Read : "暂无";
+        var html = '<tr class="js-search-block">' +
+            '<td>' +
+            '<div class="avater">' +
+            '<img src="' + item.Logo + '">' +
+            '<span class="avater-name">' + item.BizName +
+            '<span class="avater-subtitle">' + item.WechatId + '</span>' +
+            '</span>' +
+            '</div>' +
+            '</td>' +
+            '<td class="text-left">' +
+            '<div class="n-qr-code">' +
+            '<a href="javascript:void(0);" class="js-qr-code"></a>' +
+            '<div class="b-qr-code" style="display:none">' +
+            '<img src="' + qrCode + '">' +
+            '<p>微信扫一扫关注他</p>' +
+            '</div>' +
+            '</div>' +
+            '</td>' +
+            '<td>' + fans + '</td>' +
+            '<td>' + read + '</td>' +
+            '<td>' + item.SevenArticleCount + '</td>' +
+            '<td><a href="javascript:void(0);" class="btn btn-detail js-search-detail" data-bizid="' + item.BizId + '">详情</a></td>' +
+            '</tr>';
+        return html;
+    }
+
+    function ShowIndex(index) {
+        if (index == "1") {
+            return "头条";
+        } else if (index == "2") {
+            return "次条";
+        } else if (index != "-1") {
+            return "第" + index + "条";
+        }
+    };
+
+    // 点击关闭详情
+    $("#modal_container").click(function(e) {
+        if ($("#modal_container").is(e.target)) {
+            $("#modal_container").hide();
+            $("#modal_container").html("");
+        }
+    });
+
+    $("#modal_appdomain").click(function(e) {
+        if ($("#modal_appdomain").is(e.target)) {
+            $("#modal_appdomain").hide();
+            $("#modal_appdomain").html("");
+        }
+    });
+
+
+    $('#ul_searchType input').on('ifChecked', ShowText);
+
+    function ShowText() {
+        var type = $("input[name='type']:checked").val().trim();
+        var placeholder = type === '1' ? "请输入公众号名称、公众号ID、公众号发文地址" :
+            type === '2' ? "请输入公众号ID、公众号发文地址" :
+            type === '3' ? "请输入主体名称,  比如XX公司" :
+            type === '4' ? "请输入公众号名称、公众号ID、公众号发文地址" :
+            type === '5' ? "输入文章关键词" :
+            "请输入公众号名称、公众号ID、公众号发文地址";
+        $("input[name='key']").attr("placeholder", placeholder);
+        $('.js-advanced-options').hide();
+        $('.js-article-options').hide();
+        $('.js-goods-options').hide();
+        $('.js-search-line').hide();
+        $('.d-main').removeClass('senior-query');
+        $('.d-main').removeClass('article-query');
+        $('.d-main').removeClass('seniors-query');
+        $('.d-main').removeClass('articles-query');
+        $('.js-advanced-condition').hide();
+
+        $('.js-appdomain-options').hide();
+
+        if (type === '1') {
+            $(".js-base-options").show();
+        }
+        if (type === '4') {
+            $('.js-search-line').show();
+            $('.js-advanced-options').show();
+            $('.d-main').addClass('senior-query');
+            $('.js-put-down').show();
+            $('.js-advanced-box').show();
+            $('.js-appdomain-options').show();
+
+            $(".js-base-options").hide();
+            var filterMatching = GetFilter("matching");
+            if (filterMatching != 'a') {
+                $("#adv-filter-cond").show();
+            }
+        }
+        if (type === '5') {
+            $('.js-search-line').show();
+            $('.js-article-options').show();
+            $('.d-main').addClass('article-query');
+            $('.js-put-down').show();
+            $(".js-base-options").hide();
+        }
+        if (type === '6'){
+            $("input[name='key']").attr("placeholder", "请输入应用名称或域名");
+            $(".js-bizseach-tip").hide();
+        }
+        if (type === '7'){
+            $("input[name='key']").attr("placeholder", "请输入商品名称");
+            $(".js-bizseach-tip").hide();
+            $('.js-goods-options').show();
+            $('.js-advanced-condition').show();
+        }
+        $('.d-main').removeClass('advance-query');
+        $(".control-search-tip").hide().text("");
+        AutoAdapt();
+
+        $(".js-search-key-Base").hide();
+        $(".js-search-key-Advance").hide();
+        $(".js-search-key-Article").hide();
+        $(".js-search-key-AppDomain").hide();
+        $(".js-search-key-Goods").hide();
+    }
+
+    // complete sth.
+    function CheckComSth(key) {
+        var pat = new RegExp("^[0-9a-zA-Z_-]+$");
+        return pat.test(key);
+    }
+
+    var areaInfos = {"北京":["北京市"],"天津":["天津市"],"河北":["石家庄市","唐山市","秦皇岛市","邯郸市","邢台市","保定市","张家口市","承德市","沧州市","廊坊市","衡水市"],"山西":["太原市","大同市","阳泉市","长治市","晋城市","朔州市","晋中市","运城市","忻州市","临汾市","吕梁市"],"内蒙古":["呼和浩特市","包头市","乌海市","赤峰市","通辽市","鄂尔多斯市","呼伦贝尔市","巴彦淖尔市","乌兰察布市","兴安盟","锡林郭勒盟","阿拉善盟"],"辽宁":["沈阳市","大连市","鞍山市","抚顺市","本溪市","丹东市","锦州市","营口市","阜新市","辽阳市","盘锦市","铁岭市","朝阳市","葫芦岛市"],"吉林":["长春市","吉林市","四平市","辽源市","通化市","白山市","松原市","白城市","延边朝鲜族自治州"],"黑龙江":["哈尔滨市","齐齐哈尔市","鸡西市","鹤岗市","双鸭山市","大庆市","伊春市","佳木斯市","七台河市","牡丹江市","黑河市","绥化市","大兴安岭地区"],"上海":["上海市"],"江苏":["南京市","无锡市","徐州市","常州市","苏州市","南通市","连云港市","淮安市","盐城市","扬州市","镇江市","泰州市","宿迁市"],"浙江":["杭州市","宁波市","温州市","嘉兴市","湖州市","绍兴市","金华市","衢州市","舟山市","台州市","丽水市"],"安徽":["合肥市","芜湖市","蚌埠市","淮南市","马鞍山市","淮北市","铜陵市","安庆市","黄山市","滁州市","阜阳市","宿州市","巢湖市","六安市","亳州市","池州市","宣城市"],"福建":["福州市","厦门市","莆田市","三明市","泉州市","漳州市","南平市","龙岩市","宁德市"],"江西":["南昌市","景德镇市","萍乡市","九江市","新余市","鹰潭市","赣州市","吉安市","宜春市","抚州市","上饶市"],"山东":["济南市","青岛市","淄博市","枣庄市","东营市","烟台市","潍坊市","济宁市","泰安市","威海市","日照市","莱芜市","临沂市","德州市","聊城市","滨州市","菏泽市"],"河南":["郑州市","开封市","洛阳市","平顶山市","安阳市","鹤壁市","新乡市","焦作市","濮阳市","许昌市","漯河市","三门峡市","南阳市","商丘市","信阳市","周口市","驻马店市","济源市"],"湖北":["武汉市","黄石市","十堰市","宜昌市","襄阳市","鄂州市","荆门市","孝感市","荆州市","黄冈市","咸宁市","随州市","恩施土家族苗族自治州"],"湖南":["长沙市","株洲市","湘潭市","衡阳市","邵阳市","岳阳市","常德市","张家界市","益阳市","郴州市","永州市","怀化市","娄底市","湘西土家族苗族自治州"],"广东":["广州市","韶关市","深圳市","珠海市","汕头市","佛山市","江门市","湛江市","茂名市","肇庆市","惠州市","梅州市","汕尾市","河源市","阳江市","清远市","东莞市","中山市","潮州市","揭阳市","云浮市"],"广西":["南宁市","柳州市","桂林市","梧州市","北海市","防城港市","钦州市","贵港市","玉林市","百色市","贺州市","河池市","来宾市","崇左市"],"海南":["海口市","三亚市"],"重庆":["重庆市"],"四川":["成都市","自贡市","攀枝花市","泸州市","德阳市","绵阳市","广元市","遂宁市","内江市","乐山市","南充市","眉山市","宜宾市","广安市","达州市","雅安市","巴中市","甘孜藏族自治州","凉山彝族自治州"],"贵州":["贵阳市","六盘水市","遵义市","安顺市","铜仁地区","毕节市"],"云南":["昆明市","曲靖市","玉溪市","保山市","昭通市","丽江市","普洱市","临沧市","楚雄彝族自治州","红河哈尼族彝族自治州","文山壮族苗族自治州","西双版纳傣族自治州","大理白族自治州","德宏傣族景颇族自治州"],"西藏":["拉萨市","山南地区","日喀则地区","阿里地区"],"陕西":["西安市","铜川市","宝鸡市","咸阳市","渭南市","延安市","汉中市","榆林市","安康市","商洛市"],"甘肃":["兰州市","金昌市","天水市","武威市","张掖市","平凉市","酒泉市","庆阳市","定西市","陇南市"],"青海":["西宁市","海东地区","海北藏族自治州","果洛藏族自治州","玉树藏族自治州","海西蒙古族藏族自治州"],"宁夏":["银川市","石嘴山市","吴忠市","固原市","中卫市"],"新疆":["乌鲁木齐市","昌吉回族自治州","博尔塔拉蒙古自治州","巴音郭楞蒙古自治州","阿克苏地区","喀什地区","和田地区","伊犁哈萨克自治州","塔城地区","阿勒泰地区"],"香港":["香港"],"澳门":["澳门"],"台湾":["台湾"],"国外":[]};
+
+    function InitCity() {
+        var position = $('select[name="position"]').val();
+        var citys = '<option value="0">地区</option>';
+        if (position !== '0' && position.indexOf('市') < 0 && areaInfos[position] != undefined) {
+            for (var i in areaInfos[position]) {
+                citys += '<option value="' + areaInfos[position][i] + '">' + areaInfos[position][i] + '</option>';
+            }
+        }
+        $('select[name="city"]').html(citys);
+        var lastCity = '0';
+        if (position !== '0' && position.indexOf('市') < 0 && areaInfos[position] != undefined && areaInfos[position].indexOf(lastCity) >= 0) {
+            $('select[name="city"]').val(lastCity);
+        }
+        $('select[name="city"]').trigger('change.select2');
+    }
+
+
+        $(InitCity);
+    function GetAdvancedQuery() {
+        var filterMatching = GetFilter("matching");
+        if (filterMatching == 'a') {
+            return "&Matching=" + filterMatching;
+        }
+
+        var query = "&Matching=" + filterMatching + "&Price=" + GetFilter("price") + "&Read=" + GetFilter("read") + "&Fans=" + GetFilter("fans") +
+            "&Position=" + encodeURIComponent(GetFilter("position")) + "&City=" + encodeURIComponent(GetFilter("city")) + "&Industry=" + GetFilter("industry") + "&GuaZhiShu=" + GetFilter("guazhishu")
+            + "&BizSort=" + GetFilter("bizsort") + "&RelationAppValues=" + GetFilter("RelationAppValues") + "&NoRelationAppValues=" + GetFilter("NoRelationAppValues") + "&LastPubDay=" + GetFilter("lastpubday")
+            + "&CustomerType=" + GetFilter("CustomerType") + "&Ratio=" + GetFilter("Ratio") + "&Register=" + GetFilter("Register") + "&RelationApp=" + encodeURIComponent(GetFilter("RelationApp")) + "&NoRelationApp=" + encodeURIComponent(GetFilter("NoRelationApp"));
+
+        var filterFromDatas = $("#adv-filter-form").serialize();
+        return query + "&" +filterFromDatas;
+    }
+
+    function NoneAdvancedFilter() {
+        console.log(GetFilter("guazhishu"));
+        return GetFilter("price") == '0' && GetFilter("read") == '0' && GetFilter("fans") == '0' &&
+            GetFilter("ratio") == '0' && GetFilter("position") == '0' && GetFilter("industry") == '0' && GetFilter("city") == '0' && GetFilter("register") == '0' && GetFilter("guazhishu") == '0' && GetFilter("RelationAppValues") == '' && GetFilter("NoRelationAppValues")==''  ;
+    }
+
+    // 选择就是提交
+    $('.js-advanced-box,#adv-filter-cond').on('click', function(e) {
+        if ($(e.target).is($('a'))) {
+            AjaxForm2();
+        }
+    });
+    $('.js-advanced-box,#adv-filter-cond').on('ifClicked', function(e) {
+        if ($(e.target).is($('input'))) {
+            setTimeout(AjaxForm2, 10);
+        }
+    });
+    $('.js-advanced-box,#adv-filter-cond').on('change', function (e) {
+        if ($(e.target).is($('select'))) {
+            if (e.target.name !== "RelationApp" && e.target.name !== "NoRelationApp") {
+                AjaxForm2();
+            }
+
+        }
+    });
+
+
+
+    var curExcludeWords = "";
+    $("#ExcludeWords").bind("focus",
+        function() {
+            curExcludeWords = $(this).val();
+        });
+    $("#ExcludeWords").bind("blur",
+        function() {
+            if ($(this).val() != curExcludeWords) {
+                $(this).val($(this).val().replace("，", ","));
+                AjaxForm2();
+            }
+        });
+    $("#ExcludeWords").bind('keypress', function(event) {
+        if (event.keyCode === 13) {
+            AjaxForm2();
+        }
+    });
+    // 折叠
+    $('.js-advanced-condition').click(function() {
+        //$('.js-advanced-condition').show();
+        $(this).hide().siblings(".js-advanced-condition").show();
+        var type = $("input[name='type']:checked").val().trim();
+        if (type == '4') {
+            $(".js-search-line").toggle();
+            $('.js-advanced-box').toggle();
+
+
+            var filterMatching = GetFilter("matching");
+            if (filterMatching != 'a') {
+                $("#adv-filter-cond").toggle();
+
+                $('.js-appdomain-options').toggle();
+            }
+
+            $('.js-article-options').hide();
+        }
+        if (type == '5') {
+            $('.js-article-options').toggle();
+            $(".js-search-line").toggle();
+            $('.js-advanced-options').hide();
+        }
+        if (type == '7') {
+            $('.js-goods-options').toggle();
+        }
+
+        $('.d-main').removeClass('good-query');
+        if ($(this).hasClass('js-put-down')) {
+            $('.d-main').removeClass('senior-query');
+            $('.d-main').removeClass('article-query');
+            $('.d-main').removeClass('seniors-query');
+            $('.d-main').removeClass('articles-query');
+            $('.js-search-line').hide();
+        } else {
+            if (type == '4')
+                $('.d-main').addClass('senior-query');
+            if (type == '5')
+                $('.d-main').addClass('article-query');
+            if (type != '7') {
+                $('.js-search-line').show();
+            }
+        }
+        $(".control-search-tip").hide();
+        $(".control-search-tip").text("");
+        $('.d-main').removeClass('advance-query');
+        // 高度适应
+        AutoAdapt();
+    });
+
+    // 选择值
+    function GetFilter(id) {
+
+        var value = $("#js-id-" + id).find('.active').data('cond');
+        if (value === undefined) {
+            value = $('select[name="' + id + '"]').val();
+        }
+
+        if (value === undefined) {
+            value = $('select[name="js-id-' + id + '"]').val();
+        }
+
+        if (value === undefined) {
+            value = $('input[name="' + id + '"]:checked').val();
+        }
+        if (value === undefined) {
+            value = "0";
+        }
+
+        if (value === undefined) {
+            value = $('input[name="js-id-' + id + '"]:checked').val();
+        }
+
+        if (value == null) {
+            value = "";
+        }
+
+        return value;
+    };
+
+    // 选择效果
+    $('.js-conditions-input input').on('ifClicked', function() {
+        var $this = $(this).parent().parent();
+        if ($this.find('input').length === 1) {
+            $this = $this.parent();
+        }
+        $this.find('input').prop("checked", false);
+        $this.find('input').each(function() {
+            $(this).parent().removeClass("checked");
+        });
+        return true;
+    });
+    $('.js-choose-conditions a').click(function() {
+        $(this).parent().parent().find('a').removeClass('active');
+        $(this).addClass('active');
+        if ($(this).parent().parent().find('select').length > 0) {
+            $('select[name="position"]').find('option').attr('selected', false);
+            $('select[name="position"]').find('option[value="0"]').attr('selected', true);
+            $('select[name="position"]').trigger('change.select2');
+            $('select[name="city"]').html('<option value="0">地区</option>');
+            $('select[name="city"]').trigger('change.select2');
+        }
+    });
+    $('select[name="position"]').bind('change', function() {
+        $(this).parent().parent().find('a').removeClass('active');
+        if ($('select[name="position"]').val() === "0") {
+            $(this).parent().parent().find('a').addClass('active');
+        }
+        ResetCity();
+    });
+
+    function ResetCity() {
+        var position = $('select[name="position"]').val();
+        var citys = '<option value="0">不限</option>';
+        if (position !== '0' && position.indexOf('市') < 0 && areaInfos[position] != undefined) {
+            for (var i in areaInfos[position]) {
+                citys += '<option value="' + areaInfos[position][i] + '">' + areaInfos[position][i] + '</option>';
+            }
+        }
+        $('select[name="city"]').html(citys);
+        $('select[name="city"]').trigger('change.select2');
+    }
+
+    $('#js-id-matching>a').click(function() {
+        if ($(this).data('cond') == 'n') {
+            $('.js-search-condtion-industry').show();
+        } else {
+            $('.js-search-condtion-industry').hide();
+        }
+    });
+
+    // article filter
+    function GetArticleQuery() {
+
+        var query =  "&Scope=" + GetArticleFilter("scope") + "&distinctbiz=" + GetArticleFilter("distinct")+
+            "&Time=" + GetArticleFilter("time")+"&TimeRange="+$("input[name='TimeRange']").val();
+
+        var orderData = $("i.icon_essay-la.icon_essay-la-green").data("order");
+
+        if (orderData == undefined) {
+            orderData = 'p';
+        }
+
+        var articleOrder = "&Order=" + orderData
+        query += articleOrder;
+        return query;
+    }
+
+    function GetArticleFilter(id) {
+        var value = $("#js-id-article-" + id).find('.active').data('cond');
+        if (value === undefined) {
+            value = "0";
+        }
+        return value;
+    }
+
+    $('.js-article-conditions a:not(.on-close)').click(function() {
+        var level = options.userLevel;
+        if (level == '2' && $(this).data('cond') == 'c') {
+            $('.function-prompts').hide().html('');
+            $('.d-main').addClass('articles-query');
+            $(".control-search-tip").text("文章标题+内容搜索仅限豪华、企业会员可以使用").show();
+            AutoAdapt()
+            return;
+        }
+        $(this).parent().parent().find('a').removeClass('active');
+        $(this).addClass('active');
+        AjaxForm2();
+    });
+</script>
+<script>
+    // 高度适应
+    $(AutoAdapt);
+    function AutoAdapt() {
+        $(".search-result").css("padding-top", parseInt($('.search-top').get(0).offsetHeight))
+    }
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        bindBizListEvent(userLevel);
+
+        var showBizId = 0;
+
+        if (showBizId>0) {
+            $(".btn-biz-detail[data-bizid="+showBizId+"]").click();
+        }
+        //绑定评论点击
+        $("a.js-article-comment-searcharticle").unbind().on("click", getArticleCommentByArticleSearch);
+
+        $(".d-main").scroll(function() {
+
+            $(".js-search-key-Base").hide();
+            $(".js-search-key-Advance").hide();
+            $(".js-search-key-Article").hide();
+            $(".js-search-key-AppDomain").hide();
+            $(".js-search-key-Goods").hide();
+
+            var type = $("input[name='type']:checked").val();
+            if ( type== 1 || type == 6 ) {
+                return;
+            }
+
+            if ($("a.js-put-up").is(':visible')) {
+                return;
+            }
+
+            var distance = $(".d-main").scrollTop();
+            if( distance >= 500 ){
+                $(".senior-search,.js-search-line").slideUp("normal",function(){
+                    $("a.js-put-up").show();
+                    $("a.js-put-down").hide();
+                    AutoAdapt();
+                });
+            }
+        })
+
+        $('#article_search_date').dateRangePicker({
+            separator : ' 到 ',
+            startDate: formatDate(options.minSearchDate),
+            endDate: formatDate(new Date()),
+            maxDays: 60,
+            showShortcuts:false,
+            callback:function(){
+                AjaxForm2();
+            }
+        });
+
+        //清除搜索日期
+        $("#btn_clear_searchdate").on("click",function(){
+            $('#article_search_date').val('');
+            $(this).hide();
+            $('#js-id-article-time a:first').click();
+        });
+
+        $('#js-id-article-time').on("click",function(){
+            $("#article_search_date").parent().removeClass("choose-time-condition-active");
+            $('#article_search_date').val('');
+            $("#btn_clear_searchdate").hide();
+            //AjaxForm2();
+        })
+    })
+    function formatDate (date) {
+        var y = date.getFullYear();
+        var m = date.getMonth() + 1;
+        m = m < 10 ? '0' + m : m;
+        var d = date.getDate();
+        d = d < 10 ? ('0' + d) : d;
+        return y + '-' + m + '-' + d;
+    };
+
+    //获取文章评论
+    function getArticleCommentByArticleSearch() {
+        var $this = $(this);
+        var bizId = $this.data("bizid");
+        var messageId = $this.data("messageid");
+        var index = $this.data("index");
+        var articleid = $this.data("articleid");
+
+        // debugger;
+
+        if ($(".js-articlecomment-list-" + articleid).hasClass("temp-down")) {
+            $(".js-articlecomment-list-" + articleid).hide();
+            $(".js-articlecomment-list-" + articleid).removeClass("temp-down");
+            $(".js-articlecomment-list-" + articleid).addClass("temp-up");
+        }
+        else {
+            $(".js-articlecomment-list-" + articleid).show();
+            $(".js-articlecomment-list-" + articleid).addClass("temp-down");
+            $(".js-articlecomment-list-" + articleid).removeClass("temp-up");
+
+            if ($(".article-item-down-" + articleid).html().trim() == "") {
+
+                $(".article-item-down-" + articleid).html('<div class=\"load-more\" style=\"padding-top: 15px;\"><i class=\"load\"></i>正在加载</div>');
+                $.ajax({
+                    url: "/Search/GetComment?messageId=" + messageId + "&articleIndex=" + index + "&bizId=" + bizId + "&articleid=" + articleid,
+                    type: "GET",
+                    success: function (data) {
+                        if (data.status === 0) {
+                            $(".article-item-down-" + articleid).html('<div class=\"load-more\" style=\"padding-top: 15px;\">没有数据</div>');
+                            return;
+                        }
+
+                        $(".article-item-down-" + articleid).html(data);
+                        // commentContainer.show();
+                    }
+                });
+            }
+
+        }
+    }
+
+</script>
+<script>
+    $("#btnAddBiz").on("click",function(){
+        $("#search-ressult-container").hide();
+        $("#container-no-results").show();
+    })
+</script>
+
+<script type="text/javascript">
+
+    var pageTotalCount = parseInt('1');
+    $(function () {
+        InitPage(pageTotalCount, GetAjaxContent);
+        //换页数展示
+        $('#pageSizeSelect').on("change", function () {
+            var setPageSize = parseInt($('#pageSizeSelect').val());
+            setCookie("setPageSize", setPageSize);
+            console.log("setcookie:", setPageSize);
+            GetAjaxContent(1);
+            InitPage(pageTotalCount, GetAjaxContent);
+        });
+
+        $(".js-search-domain-sort").click(function() {
+            var $this = $(this);
+            if (userLevel == 0) {
+                var info = '<div class="dn-results search-disabled"> <h6>无法使用</h6> <p>抱歉，您当前的会员等级无法使用此功能，您可以<a href="#/Purchase">购买或升级会员</a></p></div>';
+                $('.search-result-list').html(info);
+                $(".load-more").hide();
+                return;
+            }
+            $(".js-search-domain-sort").removeClass("icon_essay-la-green");
+            $this.addClass("icon_essay-la-green");
+            $("#js-id-domain-list").html("");
+            $(".load-more").css('margin-top', '20px').html("<i class=\"load\"></i>正在加载"); // 显示加载
+            GetAjaxContent(1);
+        });
+
+        $(".js-track-export").click(function() {
+            var $url = "/search/trackexport";
+            var newWindow = window.open("", "_blank");
+            newWindow.location.href = $url;
+        });
+
+        $.ajax({
+            url: "/search/GetHistoryKeyWord",
+            success: function (data) {
+                var alist = "";
+                for (var item in data.BaseHistoryKeyList) {
+                    alist = alist + "<li><a href=\"javascript:HistoryKeySearch('"+data.BaseHistoryKeyList[item].sourceKey+"');\">"+data.BaseHistoryKeyList[item].showKey+"</a></li>";
+                }
+                if (alist != "") {
+                    alist = alist + "<div class=\"bdsug-f\"><a href=\"javascript:DeleteHistoryKeySearch();\" >清除历史</a></div>";
+                }
+                $(".js-search-key-Base").html("<ul>"+alist+"</ul>");
+
+                alist = "";
+                for (var item in data.AdvanceHistoryKeyList) {
+                    alist = alist + "<li><a href=\"javascript:HistoryKeySearch('"+data.AdvanceHistoryKeyList[item].sourceKey+"');\">"+data.AdvanceHistoryKeyList[item].showKey+"</a></li>";
+                }
+                if (alist != "") {
+                    alist = alist + "<div class=\"bdsug-f\"><a href=\"javascript:DeleteHistoryKeySearch();\" >清除历史</a></div>";
+                }
+                $(".js-search-key-Advance").html("<ul>"+alist+"</ul>");
+
+                alist = "";
+                for (var item in data.ArticleHistoryKeyList) {
+                    alist = alist + "<li><a href=\"javascript:HistoryKeySearch('"+data.ArticleHistoryKeyList[item].sourceKey+"');\">"+data.ArticleHistoryKeyList[item].showKey+"</a></li>";
+                }
+                if (alist != "") {
+                    alist = alist + "<div class=\"bdsug-f\"><a href=\"javascript:DeleteHistoryKeySearch();\" >清除历史</a></div>";
+                }
+                $(".js-search-key-Article").html("<ul>"+alist+"</ul>");
+
+                alist = "";
+                for (var item in data.AppDomainHistoryKeyList) {
+                    alist = alist + "<li><a href=\"javascript:HistoryKeySearch('"+data.AppDomainHistoryKeyList[item].sourceKey+"');\">"+data.AppDomainHistoryKeyList[item].showKey+"</a></li>";
+                }
+                if (alist != "") {
+                    alist = alist + "<div class=\"bdsug-f\"><a href=\"javascript:DeleteHistoryKeySearch();\" >清除历史</a></div>";
+                }
+                $(".js-search-key-AppDomain").html("<ul>"+alist+"</ul>");
+
+                alist = "";
+                for (var item in data.GoodsHistoryKeyList) {
+                    alist = alist + "<li><a href=\"javascript:HistoryKeySearch('"+data.GoodsHistoryKeyList[item].sourceKey+"');\">"+data.GoodsHistoryKeyList[item].showKey+"</a></li>";
+                }
+                if (alist != "") {
+                    alist = alist + "<div class=\"bdsug-f\"><a href=\"javascript:DeleteHistoryKeySearch();\" >清除历史</a></div>";
+                }
+                $(".js-search-key-Goods").html("<ul>"+alist+"</ul>");
+            }
+        });
+        $("#searchKey").bind("click",showHistoryKey);
+        $("#searchKey").bind("keyup",showHistoryKey);
+    });
+
+    function showHistoryKey() {
+        //debugger;
+        if ($("#searchKey").val() != "") {
+            $(".js-search-key-Base").hide();
+            $(".js-search-key-Advance").hide();
+            $(".js-search-key-Article").hide();
+            $(".js-search-key-AppDomain").hide();
+            $(".js-search-key-Goods").hide();
+            return;
+        }
+        var type = $("input[name='type']:checked").val().trim();
+        if (type == '1') {
+            $(".js-search-key-Base").show();
+        }else if (type == '4') {
+            $(".js-search-key-Advance").show();
+        }else if (type == '5') {
+            $(".js-search-key-Article").show();
+        }else if (type == '6') {
+            $(".js-search-key-AppDomain").show();
+        }else if (type == '7') {
+            $(".js-search-key-Goods").show();
+        }
+    }
+    function InitPage(totalCount, fnCallback) {
+        var pageSize = parseInt($('#pageSizeSelect').val());
+        var pageCount = Math.ceil(totalCount / pageSize);
+        Page({
+            num: pageCount,					//页码数
+            startnum: 1,				//指定页码
+            elem: $('#page1'),		//指定的元素
+            callback: function (n) {	//回调函数
+                fnCallback(n);
+            }
+        });
+    }
+
+    /*
+    function GetAjaxContent(pageIndex) {
+        console.log("测试一下pageIndex:" + pageIndex);
+    }
+    */
+
+    function LaunchAbolish($this) {
+        var url = "Launch/AddLaunchLog";
+        var id = $($this).data("bizid");
+        var key = $($this).data("key");
+        console.log("id:" + id);
+        console.log("key:" + key);
+        console.log($($this));
+        $.ajax({
+            url: url,
+            data: { bizId: id, bizKey: key },
+            type: "POST",
+            success: function (retData) {
+
+            },
+            error: function (retData) {
+                console.log(retData);
+            }
+        });
+
+    }
+
+    function showAppDomainDetail(domainId) {
+        var $url = "/appdomain/Detail?domainId=" + domainId;
+        $.ajax({
+            url: $url,
+            success: function (data) {
+                $("#modal_appdomain").html(data);
+                $("#modal_appdomain").show();
+            }
+        });
+    }
+
+    function showGoodsDetail(id) {
+        var $url = "/goods/Detail?goodsid=" + id;
+        $.ajax({
+            url: $url,
+            success: function (data) {
+                $("#modal_appdomain").html(data);
+                $("#modal_appdomain").show();
+            }
+        });
+    }
+
+    function HistoryKeySearch(key) {
+        $("input[name='key']").val(key);
+        AjaxForm2();
+    }
+    function DeleteHistoryKeySearch() {
+        $(".js-search-key-Base").remove();
+        $(".js-search-key-Advance").remove();
+        $(".js-search-key-Article").remove();
+        $(".js-search-key-AppDomain").remove();
+        $(".js-search-key-Goods").remove();
+        var $url = "/Search/DeleteHistoryKeySearch";
+        $.ajax({
+            url: $url,
+            type: "POST",
+            success: function (data) {
+
+                /*
+                $(".js-search-key-Base").html("");
+                $(".js-search-key-Advance").html("");
+                $(".js-search-key-Article").html("");
+                $(".js-search-key-AppDomain").html("");
+                */
+                console.log(data);
+
+            }
+        });
+    }
+
+
+</script>
+
+<script>
+    //商品检索方法
+    $(function() {
+
+        $(".js-goods-class a").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+            AjaxForm2();
+        });
+        $(".js-goods-price a").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+            AjaxForm2();
+        });
+        $(".js-goods-sold a").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+            AjaxForm2();
+        });
+        $(".js-goods-read a").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+            AjaxForm2();
+        });
+        $(".js-goods-sort").click(function() {
+            $(".js-goods-sort").removeClass("icon_essay-la-green");
+            $(this).addClass("icon_essay-la-green");
+            AjaxForm2();
+        });
+    });
+
+    function GoodsFormat(val) {
+        return val == null ? 0 : val;
+    }
+
+    function GetGoodsSearchParam() {
+        var urlParam = "";
+        var goodClass = $(".js-goods-class a.active").data("name");
+        if (goodClass != "") {
+            urlParam = urlParam + "&GoodsClass=" + encodeURIComponent(goodClass);
+        }
+
+        var minprice = $(".js-goods-price a.active").data("min");
+        var maxprice = $(".js-goods-price a.active").data("max");
+        if (minprice > 0) {
+            urlParam = urlParam + "&minprice=" + minprice;
+        }
+        if (maxprice > 0) {
+            urlParam = urlParam + "&maxprice=" + maxprice;
+        }
+
+        var minsold = $(".js-goods-sold a.active").data("min");
+        var maxsold = $(".js-goods-sold a.active").data("max");
+        if (minsold > 0) {
+            urlParam = urlParam + "&MinSoldNum=" + minsold;
+        }
+        if (maxsold > 0) {
+            urlParam = urlParam + "&MaxSoldNum=" + maxsold;
+        }
+
+        var minread = $(".js-goods-read a.active").data("min");
+        var maxread = $(".js-goods-read a.active").data("max");
+        if (minread> 0) {
+            urlParam = urlParam + "&MinReadNumber=" + minread;
+        }
+        if (maxread > 0) {
+            urlParam = urlParam + "&MaxReadNumber=" + maxread;
+        }
+        var sortType = $(".icon_essay-la-green").data("order");
+        if (sortType > 0) {
+            urlParam = urlParam + "&sortType=" + sortType;
+        }
+        return urlParam;
+    }
+</script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?91a409c98f787c8181d5bb8ee9c535ba";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<script type="text/javascript" src="//s.union.360.cn/194035.js" async defer></script>

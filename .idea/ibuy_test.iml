@@ -5,5 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="wechat" />
+    <orderEntry type="module" module-name="没事练习" />
+    <orderEntry type="module" module-name="DemoAPI" />
   </component>
 </module>
