@@ -10,6 +10,7 @@ import random
 import time
 import xlwt
 from xlutils.copy import copy
+import os
 
 
 data = xlrd.open_workbook('all.xls')
@@ -18,7 +19,7 @@ raw = table.nrows
 
 
 url = 'http://data.xiguaji.com/Search/SearchAct/?'
-cookie = '_data_chl=key=BaiduOrginal; ASP.NET_SessionId=og1cozz2p23vaku4b2ydlkwp; Qs_lvt_194035=1557734207%2C1558337249%2C1558407349%2C1558407483%2C1558494998; Hm_lvt_91a409c98f787c8181d5bb8ee9c535ba=1558337249,1558407350,1558407484,1558494998; compareArray=[]; xiguadata_advertise_surveygift=xiguadata_advertise_surveygift; XIGUADATA=UserId=4bf2ae7cd260e210&checksum=7971ccb03956&XIGUADATALIMITID=5fb07555bede486098efd0cae1fdadb5; Qs_pv_194035=2432243655084203500%2C2450914419077100500%2C3584359034595285000%2C1189880079886935300%2C91962158219432400; Hm_lpvt_91a409c98f787c8181d5bb8ee9c535ba=1558495507'
+cookie = 'ASP.NET_SessionId=1xow3w0hrl5sxjhbzelzdmxc; Qs_lvt_194035=1558677520; Hm_lvt_91a409c98f787c8181d5bb8ee9c535ba=1558677520; XIGUADATA=UserId=4bf2ae7cd260e210&checksum=cac4c4e02f3c&XIGUADATALIMITID=0bde6552d1774ddc8f91d87cf9280c0f; compareArray=[]; mediav=%7B%22eid%22%3A%22163230%22%2C%22ep%22%3A%22%22%2C%22vid%22%3A%22n%3FA%5BrwLL(%25%3A%609yVM!3A%60%22%2C%22ctn%22%3A%22%22%7D; Qs_pv_194035=226083947325002700%2C380646170830002370%2C1338978785018903600; Hm_lpvt_91a409c98f787c8181d5bb8ee9c535ba=1558677533'
 
 headers = {
     'Cookie': cookie,
@@ -56,7 +57,7 @@ for i in range(1, raw):
             headers=headers,
             params=d
         ).text
-        print(response)
+        # print(response)
     else:
         time.sleep(5)
         response = requests.get(
@@ -64,7 +65,7 @@ for i in range(1, raw):
             headers=headers,
             params=d
         ).text
-        print(response)
+        # print(response)
     # 搜索结果
     ssjg = re.findall('class="dn-results icon-search-result">.*?<h6>(.*?)</h6>.*?<div class="search-tips">', response, re.S)
     print(ssjg)

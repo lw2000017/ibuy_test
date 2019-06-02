@@ -122,21 +122,21 @@ def Share_material(headers, http, access_token):
     url1 = http + '/product/share-product'
     body = {
         "data": {
-            "mid": "22",
-            "type": 4},
+            "mid": "36",
+            "type": 1},
         "access_token": str(access_token)
 
     }
     body1 = {
         'data': {
-            'id': '22',
+            'id': '36',
             'type': 1
         },
         "access_token": str(access_token)
     }
     requests.packages.urllib3.disable_warnings()
     response = requests.post(url=url, json=body, headers=headers, verify=False)
-    response1 = requests.post(url=url1, json=body1,headers=headers, verify=False)
+    response1 = requests.post(url=url1, json=body1, headers=headers, verify=False)
     return response, response1
 
 
@@ -196,7 +196,9 @@ def Judge():
 
 
 if __name__ == '__main__':
-    http = 'https://apptest.ibuycoinhd.com'
+    # http = 'https://apptest.ibuycoinamc.com'    # 测试
+
+    http = 'https://app.ibuycoinamc.com'        # 正式
 
     headers = {
         'Content-Type': 'application/json;charset=utf-8'
@@ -211,8 +213,8 @@ if __name__ == '__main__':
     cursor = mysql[1]
 
     for i in range(1, rows):
-        invitee = int(table.row_values(i)[0])  # 被邀请人手机号
-        inviter = int(table.row_values(i)[1])  # 邀请人手机号
+        invitee = int(table.row_values(i)[0])    # 被邀请人手机号
+        inviter = table.row_values(i)[1]         # 邀请人手机号
 
         login_text = 'APP_LOGIN' + '{}'.format(str(invitee))
         # 两次md5加密
@@ -240,10 +242,10 @@ if __name__ == '__main__':
 
         # 判断注册是否成功
         Judge()
-
-        # 修改密码
-        # Change_pwd(db=db, cursor=cursor, invitee=invitee)
         '''
+        # 修改密码
+        Change_pwd(db=db, cursor=cursor, invitee=invitee)
+
         # 修改成长值990
         Change_grow_990(db=db, cursor=cursor, invitee=invitee)
 
@@ -256,13 +258,12 @@ if __name__ == '__main__':
 
         for k in range(3):
             Share()     # 分享素材圈和商品
-        
-        # 修改成长值1990
-        Change_grow_1990(db, cursor, invitee)
 
-        for k in range(3):
-            Share()'''
-    # 关闭数据库连接
+        # 修改成长值1990
+        # Change_grow_1990(db, cursor, invitee)
+
+        # for k in range(3):
+        #     Share()
     Close_mysql(db=db, cursor=cursor)
-    print()
-    input('输入任意内容退出....\n')
+    print()'''
+    # input('输入任意内容退出....\n')

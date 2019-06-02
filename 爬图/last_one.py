@@ -57,8 +57,8 @@ def getVideo_requests(url, path, videoName):
 
 
 if __name__ == '__main__':
-    workbook_name = 'm3u8'
-    workbook_sheet_name = 'hallo'
+    workbook_name = '网红'
+    workbook_sheet_name = 'Sheet1'
     workbook = f'{workbook_name}.xls'
     data = xlrd.open_workbook(workbook)
     table = data.sheet_by_name(f'{workbook_sheet_name}')

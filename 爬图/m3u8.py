@@ -107,45 +107,45 @@ def write_work_book(detail_name, detail_url, path, sheet):
 
 if __name__ == '__main__':
     # 关键字，可修改
-    guanjianzi = '老污龟'
+    guanjianzi = '网红'
     sheet = 'Sheet1'
     # 文件名
-    path = '{}搜索结果.xls'.format(guanjianzi)
+    path = '{}.xls'.format(guanjianzi)
     # 配置文件位置
     session = 'C:\\Users\please call me\Pictures\表情管理\M3U8 1.4.2\\aria2.session'
-    url = 'http://www.605daohang.com/'
-    # 搜索接口，输入关键字即可搜素
-    search_url = 'http://www.605daohang.com/index.php?m=vod-search'
-    soup = Search(guanjianzi)
-    detail_name = []
-    detail_url = []
-    m3u8_url = []
-    # 判断是否有下一页
-    next_page = judge_net_page(soup=soup)
-    # 判断是否有下一页，若有，则继续访问下一页的内容，若无，则只访问当前页的内容
-    while next_page is not None:
-        soup1 = again(url=url + next_page)
-        detail_name_xx = detail(soup=soup1)[0]
-        detail_url_xx = detail(soup=soup1)[1]
-        for i in range(len(detail_name_xx)):
-            detail_name.append(detail_name_xx[i])
-            detail_url.append(detail_url_xx[i])
-        for i in range(len(detail_url_xx)):
-            m3u8_url.append(index(url=url + detail_url_xx[i]))
-
-        next_page = judge_net_page(soup=soup1)
-    else:
-        detail_name_xx = detail(soup=soup)[0]
-        detail_url_xx = detail(soup=soup)[1]
-        for i in range(len(detail_name_xx)):
-            detail_name.append(detail_name_xx[i])
-            detail_url.append(detail_url_xx[i])
-        for i in range(len(detail_url_xx)):
-            m3u8_url.append(index(url=url + detail_url_xx[i]))
-
-    print("获取完毕")
-    # 写入工作簿
-    write_work_book(detail_name, m3u8_url, path, sheet=sheet)
+    # url = 'http://www.605daohang.com/'
+    # # 搜索接口，输入关键字即可搜素
+    # search_url = 'http://www.605daohang.com/index.php?m=vod-search'
+    # soup = Search(guanjianzi)
+    # detail_name = []
+    # detail_url = []
+    # m3u8_url = []
+    # # 判断是否有下一页
+    # next_page = judge_net_page(soup=soup)
+    # # 判断是否有下一页，若有，则继续访问下一页的内容，若无，则只访问当前页的内容
+    # while next_page is not None:
+    #     soup1 = again(url=url + next_page)
+    #     detail_name_xx = detail(soup=soup1)[0]
+    #     detail_url_xx = detail(soup=soup1)[1]
+    #     for i in range(len(detail_name_xx)):
+    #         detail_name.append(detail_name_xx[i])
+    #         detail_url.append(detail_url_xx[i])
+    #     for i in range(len(detail_url_xx)):
+    #         m3u8_url.append(index(url=url + detail_url_xx[i]))
+    #
+    #     next_page = judge_net_page(soup=soup1)
+    # else:
+    #     detail_name_xx = detail(soup=soup)[0]
+    #     detail_url_xx = detail(soup=soup)[1]
+    #     for i in range(len(detail_name_xx)):
+    #         detail_name.append(detail_name_xx[i])
+    #         detail_url.append(detail_url_xx[i])
+    #     for i in range(len(detail_url_xx)):
+    #         m3u8_url.append(index(url=url + detail_url_xx[i]))
+    #
+    # print("获取完毕")
+    # # 写入工作簿
+    # write_work_book(detail_name, m3u8_url, path, sheet=sheet)
 
     workbook = f'{guanjianzi}.xls'
     data = xlrd.open_workbook(workbook)
