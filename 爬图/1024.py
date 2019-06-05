@@ -33,4 +33,4 @@ response = requests.get(
 title = re.findall('<a href="html_data/.*?" id="a_ajax_.*?">(.*?)</a>', response, re.S)
 print(len(title))
 html = re.findall('<a href="html_data/(.*?)" id="a_ajax_.*?">', response, re.S)
-print(len(html))
+print(html[1])
