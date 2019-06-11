@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:/新建文件夹/python框架？/DemoAPI/.idea/DemoAPI.iml" filepath="C:/新建文件夹/python框架？/DemoAPI/.idea/DemoAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ibuy_test.iml" filepath="$PROJECT_DIR$/.idea/ibuy_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/wechat/.idea/wechat.iml" filepath="$PROJECT_DIR$/wechat/.idea/wechat.iml" />
       <module fileurl="file://$PROJECT_DIR$/没事练习/.idea/没事练习.iml" filepath="$PROJECT_DIR$/没事练习/.idea/没事练习.iml" />

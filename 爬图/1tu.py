@@ -6,7 +6,7 @@
 import requests
 import os
 from bs4 import BeautifulSoup
-import re, time
+import re
 
 
 def get_page_num(url, headers):
@@ -59,8 +59,11 @@ if __name__ == '__main__':
     url = 'http://1tu.life'
     url_num = 'http://1tu.life/page/'
 
-    cookie = 'splash_i=false; Hm_lvt_b5d455f591a92c984d0dc1b5133dbe30=1554901261,1555079784,1555251828; UM_distinctid=16a3af1994931-0a5979e681e7dd-36664c08-1fa400-16a3af1994b1c1; CNZZDATA1272353405=733715410-1555763110-%7C1556013198'
-    user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    cookie = 'splash_i=false; Hm_lvt_b5d455f591a92c984d0dc1b5133dbe30=1554901261,1555079784,1555251828; ' \
+             'UM_distinctid=16a3af1994931-0a5979e681e7dd-36664c08-1fa400-16a3af1994b1c1;' \
+             ' CNZZDATA1272353405=733715410-1555763110-%7C1556013198'
+    user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
+                 'Chrome/69.0.3497.100 Safari/537.36'
 
     headers = {
         'Cookie': cookie,

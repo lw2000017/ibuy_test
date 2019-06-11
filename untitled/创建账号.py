@@ -3,12 +3,13 @@ import requests
 import hashlib
 import xlrd
 import pymysql
+import urllib3
 
 
 # 发送验证码
 def Sms_url(url, headers):
     sms_body = {"data": {"phone": '{}'.format(invitee), "code_type": "SMS_LOGIN"}}
-    requests.packages.urllib3.disable_warnings()  # 屏蔽https警告
+    urllib3.disable_warnings()  # 屏蔽https警告
     response = requests.post(url=url, json=sms_body, headers=headers, verify=False)
     # print(response.text)
     globals()['code'] = response.json()['data']['code']  # 获取 code
@@ -25,7 +26,7 @@ def Sign_url(url, headers, sign_text):
                  "invite": '{}'.format(inviter)
                  }
     }
-    requests.packages.urllib3.disable_warnings()  # 屏蔽https警告
+    urllib3.disable_warnings()  # 屏蔽https警告
     response = requests.post(url=url, json=sign_body, headers=headers, verify=False)
     if 'SUCCESS' in response.json()['msg']:
         print('{} 账号创建成功。'.format(invitee) + ' 他的上级是 {}'.format(inviter))
