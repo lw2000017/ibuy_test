@@ -15,8 +15,12 @@ import xlrd
 # 第一次搜索，查看搜索页的全部内容
 def Search(guanjianzi):
     now = int(time.time())
-    cookie = '__cfduid=d48935a19fa9c9a6fb304c90b7fc9bde41556786231; PHPSESSID=4u5olhtrust6p6hn5r18pv5dg0; Hm_lvt_f6a8bb3e30850d0127c484619f0210c7=1556786235; Hm_lpvt_f6a8bb3e30850d0127c484619f0210c7={}'.format(now)
-    User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.204 Safari/537.36'
+    search_url = ''
+    cookie = '__cfduid=d48935a19fa9c9a6fb304c90b7fc9bde41556786231; PHPSESSID=4u5olhtrust6p6hn5r18pv5dg0;' \
+             ' Hm_lvt_f6a8bb3e30850d0127c484619f0210c7=1556786235; ' \
+             'Hm_lpvt_f6a8bb3e30850d0127c484619f0210c7={}'.format(now)
+    User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
+                 'Chrome/64.0.3282.204 Safari/537.36'
     headers = {
         'Cookie': cookie,
         'User-Agent': User_Agent,
@@ -58,8 +62,11 @@ def judge_net_page(soup):
 # 再次请求，请求的是下一页的内容
 def again(url):
     now = int(time.time())
-    cookie = '__cfduid=d48935a19fa9c9a6fb304c90b7fc9bde41556786231; PHPSESSID=4u5olhtrust6p6hn5r18pv5dg0; Hm_lvt_f6a8bb3e30850d0127c484619f0210c7=1556786235; Hm_lpvt_f6a8bb3e30850d0127c484619f0210c7={}'.format(now)
-    User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.204 Safari/537.36'
+    cookie = '__cfduid=d48935a19fa9c9a6fb304c90b7fc9bde41556786231; PHPSESSID=4u5olhtrust6p6hn5r18pv5dg0; ' \
+             'Hm_lvt_f6a8bb3e30850d0127c484619f0210c7=1556786235; ' \
+             'Hm_lpvt_f6a8bb3e30850d0127c484619f0210c7={}'.format(now)
+    User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
+                 'Chrome/64.0.3282.204 Safari/537.36'
     headers = {
         'Cookie': cookie,
         'User-Agent': User_Agent,
@@ -73,8 +80,11 @@ def again(url):
 # 获取详情页的m3u8地址
 def index(url):
     now = int(time.time())
-    cookie = '__cfduid=d48935a19fa9c9a6fb304c90b7fc9bde41556786231; PHPSESSID=4u5olhtrust6p6hn5r18pv5dg0; Hm_lvt_f6a8bb3e30850d0127c484619f0210c7=1556786235; Hm_lpvt_f6a8bb3e30850d0127c484619f0210c7={}'.format(now)
-    User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.204 Safari/537.36'
+    cookie = '__cfduid=d48935a19fa9c9a6fb304c90b7fc9bde41556786231; PHPSESSID=4u5olhtrust6p6hn5r18pv5dg0; ' \
+             'Hm_lvt_f6a8bb3e30850d0127c484619f0210c7=1556786235; ' \
+             'Hm_lpvt_f6a8bb3e30850d0127c484619f0210c7={}'.format(now)
+    User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
+                 'Chrome/64.0.3282.204 Safari/537.36'
     headers = {
         'Cookie': cookie,
         'User-Agent': User_Agent,
