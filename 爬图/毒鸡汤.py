@@ -53,6 +53,7 @@ def duplicate_removal():
 
 
 if __name__ == '__main__':
-    duplicate_removal()
+    run()   # 开始爬取
+    # duplicate_removal()     # 去除重复信息
 
 
