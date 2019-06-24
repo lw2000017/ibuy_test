@@ -4,6 +4,7 @@ import xlrd
 import hashlib
 import pymysql
 import time
+import urllib3
 
 
 # 发送验证码
@@ -15,7 +16,7 @@ def Sms(http, invitee, headers):
             "code_type": "SMS_LOGIN",
         }
     }
-    requests.packages.urllib3.disable_warnings()  # 屏蔽https警告
+    urllib3.disable_warnings()  # 屏蔽https警告
     response = requests.post(url=url, json=body, headers=headers, verify=False)
     code = response.json()['data']['code']
     biz = response.json()['data']['biz']
@@ -34,7 +35,7 @@ def Sign(http, invitee, code, biz, sign, inviter):
             'invite': '{}'.format(inviter)
         }
     }
-    requests.packages.urllib3.disable_warnings()
+    urllib3.disable_warnings()
     response = requests.post(url=url, json=body, headers=headers, verify=False)
     return response
 
@@ -109,7 +110,7 @@ def login_pwd(http, headers, invitee, login_text):
             'sign': '{}'.format(login_text)
         }
     }
-    requests.packages.urllib3.disable_warnings()
+    urllib3.disable_warnings()
     response = requests.post(url=url, json=body, headers=headers, verify=False)
     # print(response.text)
     access_token = response.json()['data']['access_token']
@@ -134,7 +135,7 @@ def Share_material(headers, http, access_token):
         },
         "access_token": str(access_token)
     }
-    requests.packages.urllib3.disable_warnings()
+    urllib3.disable_warnings()
     response = requests.post(url=url, json=body, headers=headers, verify=False)
     response1 = requests.post(url=url1, json=body1, headers=headers, verify=False)
     return response, response1
@@ -151,7 +152,7 @@ def Share_goods(headers, http, access_token):
         },
         "access_token": str(access_token)
     }
-    requests.packages.urllib3.disable_warnings()  # 屏蔽https警告
+    urllib3.disable_warnings()  # 屏蔽https警告
     response = requests.post(url, json=body, headers=headers, verify=False)
     return response
 
@@ -242,29 +243,30 @@ if __name__ == '__main__':
 
         # 判断注册是否成功
         Judge()
-        '''
+
         # 修改密码
-        Change_pwd(db=db, cursor=cursor, invitee=invitee)
+        # Change_pwd(db=db, cursor=cursor, invitee=invitee)
 
         # 修改成长值990
-        Change_grow_990(db=db, cursor=cursor, invitee=invitee)
+        # Change_grow_990(db=db, cursor=cursor, invitee=invitee)
 
         # 执行的太快反应不过来，这边就等待1s了
         time.sleep(1)
 
         # 分享前需要登录
-        login = login_pwd(http=http, headers=headers, invitee=invitee, login_text=login_text)
-        access_token = login
-
-        for k in range(3):
-            Share()     # 分享素材圈和商品
+        # login = login_pwd(http=http, headers=headers, invitee=invitee, login_text=login_text)
+        # access_token = login
+        
+        # for k in range(3):
+        #     Share()     # 分享素材圈和商品
 
         # 修改成长值1990
         # Change_grow_1990(db, cursor, invitee)
 
         # for k in range(3):
         #     Share()
+
     Close_mysql(db=db, cursor=cursor)
-    print()'''
+    print()
     # input('输入任意内容退出....\n')
 

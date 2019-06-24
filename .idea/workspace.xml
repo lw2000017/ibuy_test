@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d0f8bec-170f-4a2e-a4af-fab60cf02e6d" name="Default" comment="2019/6/11">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/pleasecallme.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium/appium_ios.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium/appium_ios.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/once.py" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/once.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/手机号.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/手机号.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/爬图/1.m3u8" beforeDir="false" afterPath="$PROJECT_DIR$/爬图/1.m3u8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/爬图/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬图/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬图/111.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬图/111.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬图/毒鸡汤.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬图/毒鸡汤.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬图/cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬图/cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬图/m3u8.xls" beforeDir="false" afterPath="$PROJECT_DIR$/爬图/m3u8.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,55 +48,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/爬图/毒鸡汤.py">
+        <entry file="file://$PROJECT_DIR$/untitled/once.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            <state relative-caret-position="388">
+              <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
               <folding>
-                <element signature="e#138#153#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/爬图/1.m3u8">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/爬图/111.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="192" column="16" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="16" />
-              <folding>
-                <element signature="e#159#180#0" expanded="true" />
+                <element signature="e#17#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/爬图/1.py">
+        <entry file="file://$PROJECT_DIR$/爬图/asiansister.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="374">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
               <folding>
-                <element signature="e#111#126#0" expanded="true" />
+                <element signature="e#143#157#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/爬图/cmd.py">
+        <entry file="file://$PROJECT_DIR$/爬图/douyin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="42">
+              <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+              <folding>
+                <element signature="e#155#170#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,14 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>3789</find>
-      <find>itemName</find>
-      <find>口水娃小鱼仔1kg（110包）＋赠口水娃山药薄片90g</find>
-      <find>a.json</find>
-      <find>}][{</find>
-      <find>activityName</find>
-      <find>time.sl</find>
-      <find>裙子</find>
       <find>starts</find>
       <find>,</find>
       <find>fakeid</find>
@@ -139,6 +117,14 @@
       <find>self.url</find>
       <find>开始合并</find>
       <find>tar</find>
+      <find>.get</find>
+      <find>'id'</find>
+      <find>uid</find>
+      <find>_t</find>
+      <find>_t.jpg</find>
+      <find>titlenam</find>
+      <find>titleName</find>
+      <find>titlename</find>
     </findStrings>
     <replaceStrings>
       <replace>C:\\Users\please call me\PycharmProjects\ibuy_test\抓取\\</replace>
@@ -162,8 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wechat/h1.py" />
-        <option value="$PROJECT_DIR$/抓取/a.json" />
         <option value="$PROJECT_DIR$/抓取/test.py" />
         <option value="$PROJECT_DIR$/抓取/yunji.py" />
         <option value="$PROJECT_DIR$/抓取/11.py" />
@@ -199,20 +183,22 @@
         <option value="$PROJECT_DIR$/爬图/last_one.py" />
         <option value="$PROJECT_DIR$/爬图/mm.py" />
         <option value="$PROJECT_DIR$/爬图/1024.py" />
-        <option value="$PROJECT_DIR$/untitled/once.py" />
         <option value="$PROJECT_DIR$/爬图/1tu.py" />
         <option value="$PROJECT_DIR$/爬图/578100.py" />
         <option value="$PROJECT_DIR$/爬图/test.py" />
         <option value="$PROJECT_DIR$/爬图/test1.py" />
-        <option value="$PROJECT_DIR$/appium/appium_ios.py" />
         <option value="$PROJECT_DIR$/untitled/创建账号.py" />
         <option value="$PROJECT_DIR$/appium/monkey.py" />
         <option value="$PROJECT_DIR$/爬图/m3u8.py" />
         <option value="$PROJECT_DIR$/爬图/1.m3u8" />
         <option value="$PROJECT_DIR$/爬图/毒鸡汤.py" />
         <option value="$PROJECT_DIR$/爬图/111.py" />
+        <option value="$PROJECT_DIR$/appium/appium_ios.py" />
         <option value="$PROJECT_DIR$/爬图/cmd.py" />
         <option value="$PROJECT_DIR$/爬图/1.py" />
+        <option value="$PROJECT_DIR$/untitled/once.py" />
+        <option value="$PROJECT_DIR$/爬图/asiansister.py" />
+        <option value="$PROJECT_DIR$/爬图/douyin.py" />
       </list>
     </option>
   </component>
@@ -222,9 +208,8 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="686" />
-    <option name="y" value="76" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="979" />
   </component>
@@ -234,6 +219,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,7 +236,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,7 +247,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -281,29 +266,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1">
-    <configuration name="毒鸡汤" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ibuy_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬图" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬图/毒鸡汤.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.douyin">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ibuy_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -348,7 +311,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="1tu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="appium_ios" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ibuy_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -356,12 +319,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬图" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬图/1tu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/appium/appium_ios.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -370,7 +333,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="578100" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="asiansister" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ibuy_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -383,7 +346,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬图/578100.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬图/asiansister.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -392,7 +355,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cmd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="douyin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ibuy_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -405,7 +368,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬图/cmd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬图/douyin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="once" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ibuy_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/untitled" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/untitled/once.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -416,19 +401,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.111" />
-      <item itemvalue="Python.1tu" />
-      <item itemvalue="Python.毒鸡汤" />
       <item itemvalue="Python.1" />
-      <item itemvalue="Python.578100" />
-      <item itemvalue="Python.cmd" />
+      <item itemvalue="Python.appium_ios" />
+      <item itemvalue="Python.once" />
+      <item itemvalue="Python.douyin" />
+      <item itemvalue="Python.asiansister" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.douyin" />
+        <item itemvalue="Python.asiansister" />
+        <item itemvalue="Python.once" />
         <item itemvalue="Python.1" />
-        <item itemvalue="Python.cmd" />
-        <item itemvalue="Python.1tu" />
-        <item itemvalue="Python.毒鸡汤" />
-        <item itemvalue="Python.578100" />
+        <item itemvalue="Python.appium_ios" />
       </list>
     </recent_temporary>
   </component>
@@ -448,7 +433,11 @@
       <workItem from="1560081133453" duration="3980000" />
       <workItem from="1560160756968" duration="25483000" />
       <workItem from="1560498358023" duration="3759000" />
-      <workItem from="1560502132189" duration="4102000" />
+      <workItem from="1560502132189" duration="7467000" />
+      <workItem from="1560608796961" duration="105000" />
+      <workItem from="1560738223754" duration="20923000" />
+      <workItem from="1560849169744" duration="8570000" />
+      <workItem from="1560872118272" duration="24721000" />
     </task>
     <task id="LOCAL-00001" summary="2019/6/11">
       <created>1560233282973</created>
@@ -461,7 +450,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38268000" />
+    <option name="totallyTimeSpent" value="95952000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,10 +462,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="979" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="979" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909255" visible="true" weight="0.123931624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909255" visible="true" weight="0.12881564" />
       <window_info id="Structure" order="1" sideWeight="0.5009074" side_tool="true" weight="0.12793177" />
       <window_info id="Favorites" order="2" sideWeight="0.5009074" side_tool="true" weight="0.12793177" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50061053" side_tool="true" weight="0.3201804" />
@@ -487,8 +475,8 @@
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32581738" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.4993895" visible="true" weight="0.3393461" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.3990981" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.4993895" weight="0.3664036" />
+      <window_info anchor="bottom" id="Debug" order="9" visible="true" weight="0.3990981" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32694477" />
@@ -566,30 +554,20 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="num_sum" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ibuy_test$once.coverage" NAME="once Coverage Results" MODIFIED="1561106805768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
     <SUITE FILE_PATH="coverage/ibuy_test$111.coverage" NAME="111 Coverage Results" MODIFIED="1560501661602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
-    <SUITE FILE_PATH="coverage/ibuy_test$cmd.coverage" NAME="cmd Coverage Results" MODIFIED="1560507492497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
+    <SUITE FILE_PATH="coverage/ibuy_test$douyin.coverage" NAME="douyin Coverage Results" MODIFIED="1561277441728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
+    <SUITE FILE_PATH="coverage/ibuy_test$cmd.coverage" NAME="cmd Coverage Results" MODIFIED="1560741350531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
+    <SUITE FILE_PATH="coverage/ibuy_test$appium_ios.coverage" NAME="appium_ios Coverage Results" MODIFIED="1560762985398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium" />
+    <SUITE FILE_PATH="coverage/ibuy_test$asiansister.coverage" NAME="asiansister Coverage Results" MODIFIED="1561115196264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
     <SUITE FILE_PATH="coverage/ibuy_test$.coverage" NAME="毒鸡汤 Coverage Results" MODIFIED="1560325380416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
     <SUITE FILE_PATH="coverage/ibuy_test$578100.coverage" NAME="578100 Coverage Results" MODIFIED="1560240946072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
-    <SUITE FILE_PATH="coverage/ibuy_test$1.coverage" NAME="1 Coverage Results" MODIFIED="1560507702045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
+    <SUITE FILE_PATH="coverage/ibuy_test$1.coverage" NAME="1 Coverage Results" MODIFIED="1560867767651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
     <SUITE FILE_PATH="coverage/ibuy_test$1tu.coverage" NAME="1tu Coverage Results" MODIFIED="1560325613004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬图" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demoAPI/demoAPI/run_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/情感1.txt" />
-    <entry file="file://$PROJECT_DIR$/wechat/情感.txt" />
     <entry file="file://$PROJECT_DIR$/demoAPI/demoAPI/config/setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
@@ -608,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled/once.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3990">
-          <caret line="270" selection-start-line="270" selection-end-line="270" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/爬图/test.py" />
     <entry file="file://$PROJECT_DIR$/爬图/test1.py" />
     <entry file="file://$PROJECT_DIR$/appium/爱买店.py">
@@ -624,13 +595,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/appium/学习强国.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium/appium_ios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/爬图/b.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -712,16 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/untitled/创建账号.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/untitled/邀请会员.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -751,16 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/爬图/last_one.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#133#154#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,16 +741,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/爬图/毒鸡汤.pages" />
     <entry file="file://$PROJECT_DIR$/爬图/毒鸡汤.txt" />
-    <entry file="file://$PROJECT_DIR$/爬图/1tu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="26" />
-          <folding>
-            <element signature="e#89#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/爬图/mm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1030">
@@ -847,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/爬图/毒鸡汤.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
+        <state relative-caret-position="770">
           <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding>
             <element signature="e#138#153#0" expanded="true" />
@@ -855,9 +789,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/爬图/1.m3u8">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/爬图/111.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
+        <state relative-caret-position="796">
           <caret line="192" column="16" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="16" />
           <folding>
             <element signature="e#159#180#0" expanded="true" />
@@ -865,29 +806,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/爬图/1.m3u8">
+    <entry file="file://$PROJECT_DIR$/appium/appium_ios.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled/创建账号.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1413">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬图/1tu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="26" />
+          <folding>
+            <element signature="e#89#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="386" selection-start-line="386" selection-end-line="386" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/爬图/cmd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="506">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/爬图/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="642">
+          <caret line="161" column="18" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="18" />
           <folding>
             <element signature="e#111#126#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/爬图/last_one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-659">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#133#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled/once.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬图/douyin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+          <folding>
+            <element signature="e#155#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬图/asiansister.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <element signature="e#143#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

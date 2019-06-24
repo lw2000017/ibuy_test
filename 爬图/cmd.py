@@ -17,7 +17,7 @@ cmd1 = 'ffmpeg -y -i /Users/pleasecallme/Documents/视频/m3u8/3.ts -c:v libx264
        '/Users/pleasecallme/Documents/视频/m3u8/3.mp4'
 # os.system(cmd1)
 
-
 dele_cmd = 'rm -f /Users/pleasecallme/Documents/视频/m3u8/*.ts'
 
 os.system(dele_cmd)
+

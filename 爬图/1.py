@@ -47,7 +47,7 @@ class M3U8:
 
     def trans_url(self, videoUrl, videoName):
         """转换成为带有ts地址的m3u8地址"""
-        response = requests.get(videoUrl)
+        response = requests.get(videoUrl, verify=False)
         # print(response.text)
         with open('1.m3u8', 'w') as f:
             f.writelines(response.text)
@@ -67,7 +67,7 @@ class M3U8:
 
     def get_ts(self, url_ts, videoName):
         """获得ts地址"""
-        res = requests.get(url_ts)
+        res = requests.get(url_ts, verify=False)
         # 写入ts文件
         with open('1.m3u8', 'w') as f:
             f.writelines(res.text)
@@ -100,13 +100,15 @@ class M3U8:
             f.close()
         # print(target)
         # print(last_ts_url[0].split('\n')[0])
-        task = self.pool.map(self.download_for_multi_process, last_ts_url, videoName)  # 此时非阻塞
+        task = self.pool.map(self.download_for_multi_process, last_ts_url)  # 此时非阻塞
         for t in task:  # 此时会变成阻塞
             pass
 
-    def download_for_multi_process(self, last_ts_url, videoName):
+    def download_for_multi_process(self, last_ts_url):
         target = '/Users/pleasecallme/Documents/视频/m3u8/' + last_ts_url.split('\n')[0].split('hls/')[-1]
+
         filename = target.split('/m3u8/')[-1]
+        print(filename)
         self.download_file(last_ts_url, target)
         print(f'{filename} ---> done!')
 
@@ -140,7 +142,23 @@ class M3U8:
 
 
 
-if __name__ == '__main__':
-    run = M3U8()
-    run.run()
 
+import re
+def test():
+    url = 'http://hijuu.net/v1.html'
+    # url = 'https://soutuibao.com/video/2019-03-25/132127084/index.m3u8'
+    # urllib3.disable_warnings()
+    headers = {
+        'User-Agent': 'JSBoxMain/335 CFNetwork/978.0.7 Darwin/18.6.0'
+    }
+    res = requests.get(url, headers=headers, verify=False).encoding('gb2312')
+    print(res)
+
+    href_list = re.findall('<a href="(.*?)" title="(.*?)">.*?<div class="psize"', res.content, re.S)
+    print(href_list)
+
+
+if __name__ == '__main__':
+    # run = M3U8()
+    # run.run()
+    test()
