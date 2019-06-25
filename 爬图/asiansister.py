@@ -2,7 +2,7 @@
 # @Time     :2019/06/21  13:39
 # @Author   :刘向上
 # @File     :asiansister.py
-# @Order    :https://www.asiansister.com/
+# @explain  :https://www.asiansister.com/
 
 
 import urllib3
@@ -40,8 +40,7 @@ class asiansister():
         res = requests.get(self.url, self.headers, verify=False).text
         item = re.findall('<a href=\'(.*?)\' style="text-decoration: none;">.*?<div class="titleName">(.*?)'
                           '</div>.*?</a>', res, re.S)
-        # print(item)
-        # _page=num
+
         for i in range(len(item)):
             titleName = item[i][1].strip()
             page_url = item[i][0]

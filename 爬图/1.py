@@ -151,10 +151,10 @@ def test():
     headers = {
         'User-Agent': 'JSBoxMain/335 CFNetwork/978.0.7 Darwin/18.6.0'
     }
-    res = requests.get(url, headers=headers, verify=False).encoding('gb2312')
+    res = requests.get(url, headers=headers, verify=False).content.decode('utf-8')
     print(res)
 
-    href_list = re.findall('<a href="(.*?)" title="(.*?)">.*?<div class="psize"', res.content, re.S)
+    href_list = re.findall('<a href="(.*?)" title="(.*?)">.*?<div class="psize"', res, re.S)
     print(href_list)
 
 
